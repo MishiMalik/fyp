@@ -1,0 +1,52 @@
+.profile__card{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.13);
+    background-color: $white;
+    border-radius: 10px;
+    padding: 20px 40px;
+    min-height: 82vh;
+    .personal__picture{
+     overflow: hidden;
+     object-fit: cover;
+     height:150px;
+     width:150px;
+     text-align: center;
+     border: 2px solid $primary-light;
+     margin: 0px auto;
+     img{
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+     }
+    }
+}
+.porder1{
+    order: 1;
+    @media only screen and(max-width:575px) {
+        order: 2;
+        margin-top: 5px;
+   
+    }
+    h2{
+        @media only screen and(max-width:575px) {
+           text-align: center;
+        }
+    }
+    p{
+        @media only screen and(max-width:575px) {
+            text-align: center;
+         }
+    }
+    span{
+        @media only screen and(max-width:575px) {
+            justify-content: center;
+            margin-top: 7px !important;
+         }
+    }
+}
+.porder2{
+    order: 2;
+    @media only screen and(max-width:575px) {
+        order: 1;
+      
+    }
+}

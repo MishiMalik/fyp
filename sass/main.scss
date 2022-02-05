@@ -1,0 +1,21 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+
+@import "base/animation";
+@import "base/typography";
+@import "base/utilties";
+@import "base/buttons";
+@import "base/data-tables";
+
+
+@import "Spages/dashboard";
+@import "Spages/sign-up";
+@import "Spages/profile";
+@import "Spages/enrolments";
+@import "Spages/assignments";
+@import "Spages/complaints";
+
+@import "layout/main-header.scss";
+@import "layout/left-sidebar.scss";
+@import "layout/right-sidebar.scss";

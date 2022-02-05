@@ -1,0 +1,108 @@
+.dataTables_info{
+    display: none !important;
+}
+.pagination{
+    display: none !important;
+}
+.dataTables_length{display: none !important;}
+#example_filter{
+    position: absolute;
+   right : 0px !important;
+   bottom: 0px !important;
+   border: none !important;
+    label{
+        color: black !important;
+    }
+    input{
+        background-color: $gray-light !important;
+        border-radius: 4px;
+        border: none !important;
+        &::placeholder{
+            content: 'Seach' !important;
+            color: black;
+        }
+        &:focus,
+        &:active{
+            box-shadow: none !important;
+        }
+    }
+}
+tr{
+    &:hover{
+        background-color: rgba(0, 123, 255, 0.466) !important;
+    }
+}
+.s-no{
+    width: 10% !important;
+}
+.code{
+    width: 20% !important;
+}
+.title{
+    width: 50% !important;
+}
+.ch{
+    width: 15% !important;
+}
+.td{
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: $primary-light;
+    @media only screen and(max-width:1150px){
+       font-size: 14px !important;
+    }
+    @media only screen and(max-width:767px){
+        font-size: 13px !important;
+        padding: 10px !important;
+     }
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    // background-color: rgba(0, 123, 255, 0.466) !important;
+    background-color: transparent !important;
+    color: white !important;
+    &:hover{
+        background-color: rgba(0, 123, 255, 0.466) !important;
+    }
+}
+.thead{
+      background-color: $primary-light !important;
+      color: white !important;
+      th{
+          font-size: 16px !important;
+          font-weight: 500 !important;
+          @media only screen and(max-width:1150px){
+            font-size: 14px !important;
+         }
+         @media only screen and(max-width:767px){
+             font-size: 14px !important;
+             padding: 15px !important;
+          }
+         
+      }
+      &:hover{
+        background-color: $primary-light !important;
+    }
+    
+}
+
+// Results page
+.tite-R{
+    width: 40% !important;
+}
+.gpa{
+    width: 10% !important;
+}
+.marks{
+    width: 10% !important;
+}
+.grades{
+    width: 10% !important;
+}
+
+.table-data{
+   @media only screen and(max-width:1150px){
+    //    max-width: 900px !important;
+    //    min-width: 600px !important;
+       overflow-x: scroll;
+   }
+}

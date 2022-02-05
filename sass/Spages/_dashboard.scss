@@ -1,0 +1,366 @@
+.main-section {
+    margin-left: 18%;
+    border-right: 3px solid $gray-light;
+    background-color: $white;
+    @media screen and (max-width: 1150px) {
+        margin-left: 22% !important;
+    }
+    @media screen and (max-width: 1024px) {
+        padding-left:15px;
+        padding-right: 15px;
+    }
+    @media screen and (max-width: 767px) {
+        margin-left: 0% !important;
+        margin-top: 70px;
+    }
+}
+
+.dashboard {
+    &__profile {
+        margin-top: 18px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.13);
+        background-color: $white;
+        border-radius: 10px;
+        padding: 20px;
+       
+        @media screen and (max-width: 991px) {
+            padding: 18px;
+          }
+          @media screen and (max-width: 767px) {
+            padding: 25px !important;
+            margin-top: 0px !important;
+          }
+        &-img{
+            height: 170px !important;
+            width: 170px !important;
+            @media screen and (max-width: 767px) {
+                height: 200px !important;
+                width: 200px !important;
+                text-align: justify;
+              }
+        }
+        &-text {
+         
+            p{
+                font-size: 16px;
+                
+                @media screen and (max-width: 991px) {
+                    font-size: 16px;
+                    text-align: justify;
+                  }
+                  @media screen and (min-width:1600px) {
+                    font-size: 20px;
+                  }
+
+                  
+            }
+            span {
+                font-weight: 600;
+                @media screen and (max-width: 991px) {
+                    font-size: 16px;
+                    text-align: justify;
+                  }
+                  @media screen and (min-width:1600px) {
+                    font-size: 20px;
+                  }
+
+            }
+            @media screen and (max-width: 991px) {
+               font-size: 15px;
+             }
+             @media screen and (max-width: 767px) {
+                font-size: 16px;;
+             }
+             @media screen and (min-width:1600px) {
+                font-size: 28px;
+              }
+
+
+        }
+    }
+
+    &__assignment {
+        margin-top: 20px;
+
+        &-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .view {
+                font-size: 14px;
+                font-weight: 500;
+                color: $primary-light;
+                @media screen and (min-width:1600px) {
+                    font-size: 18px;
+                  }
+            }
+        }
+
+        &-line {
+            height: 2px;
+            width: 100%;
+            background-color: $gray-light;
+            margin: 0px;
+        }
+
+        &-card {
+            text-decoration: none;
+            background-color: $gray-light3;
+            border-radius: 10px;
+            // border: 2px solid $gray-light2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px !important;
+            border: 2px solid $gray-dark2;
+            &:hover{
+                border:2px solid $gray-dark ;
+                text-decoration: none;
+            }
+            
+            &-heading{
+                font-size: 16px;
+                font-weight: 600;
+                color: black !important;
+                @media screen and (min-width:1600px) {
+                    font-size: 20px;
+                  }
+            }
+            span {
+                color: $gray-light2;
+                font-size: 16px;
+                @media screen and (max-width:1060px) {
+                    font-size:14px !important;
+                 }
+                 @media screen and (max-width:991px) {
+                    font-size:16px !important;
+                 }
+                 @media screen and (min-width:1600px) {
+                    font-size: 18px;
+                  }
+            }
+
+            .icon {
+                height: 45px;
+                width: 45px;
+                border-radius: 100%;
+                background-color: $gray-light3;
+                border: 1px solid $gray-light2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px 0px !important;
+                @media screen and (max-width: 767px) {
+                    margin: 10px 0px !important;
+                }
+                    @media screen and (min-width:1600px) {
+                        height: 50px;
+                        width: 50px;
+                        margin: 13px 0px !important;
+                    }
+                 
+                svg {
+                    height: 35px;
+                    width: 35px;
+                    @media screen and (min-width:1600px) {
+                        height: 38px;
+                        width: 38px;
+                    }
+                }
+            }
+
+            .date {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    color: $gray-light2;
+                    font-size: 14px;
+                    @media screen and (max-width:1024px) {
+                        font-size:12px !important;
+                     }
+                     @media screen and (max-width:991px) {
+                        font-size:14px !important;
+                     }
+                     @media screen and (min-width:1600px) {
+                       font-size: 18px;
+                    }
+
+                    svg {
+                        height: 12px !important;
+                        width: 12px !important;
+                        fill: $red;
+                        @media screen and (min-width:1600px) {
+                            height: 14px;
+                            width: 14px;
+                        }
+
+                    }
+
+                }
+
+                .last-date {
+                    color: $red;
+                    font-weight: 600 !important;
+                    @media screen and (min-width:1600px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .missing-card-1 {
+        background-color: $red-light !important;
+        color: white;
+        padding: 12px;
+        border-radius: 10px;
+        cursor: pointer;
+        border:2px solid $red-light;
+        &:hover{
+            border:2px solid $red;
+        }
+        @media screen and (max-width:375px) {
+            display: flex;
+            flex-direction: column !important;
+        }
+        .description {
+            font-size: 14px;
+            
+            @media screen and (max-width:375px) {
+                font-size:13px !important;
+                width: 100%;
+             }
+             @media screen and (min-width:1600px) {
+              font-size: 18px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            background-color: $red;
+            color: white;
+            border-radius: 3px;
+            padding: 4px 6px;
+            font-size: 14px;
+            @media screen and (min-width:1600px) {
+                font-size: 18px;
+              }
+        }
+
+        .item-pic {
+            background-color: $red;
+            height: 60px;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+            @media screen and (max-width:375px) {
+                height: 80px;
+                width: 80px;
+                margin: 15px 0;
+             }
+            svg {
+                height: 50px;
+                width: 50px;
+                @media screen and (max-width:375px) {
+                    height: 70px;
+                    width: 70px;
+                 }
+                @media screen and (min-width:1600px) {
+                    height: 55px;
+                    width: 55px;
+                  }
+            }
+        }
+    }
+
+    .missing-card-2 {
+        background-color: $yellow !important;
+        color: white;
+        padding: 12px;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 2px solid $yellow-light;
+        &:hover{
+            border:2px solid $yellow;
+        }
+        @media screen and (max-width:375px) {
+            display: flex;
+            flex-direction: column !important;
+        }
+        .description {
+            font-size: 14px;
+            @media screen and (max-width:375px) {
+                font-size:13px !important;
+                width: 100%;
+             }
+             @media screen and (min-width:1600px) {
+                font-size: 18px;
+              }
+        }
+
+        a {
+            text-decoration: none;
+            background-color: $yellow-light;
+            color: white;
+            border-radius: 3px;
+            padding: 4px 6px;
+            font-size: 14px;
+            @media screen and (min-width:1600px) {
+                font-size: 18px;
+              }
+
+        }
+
+        .item-pic {
+            background-color: $yellow-light;
+            height: 60px;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+            @media screen and (max-width:375px) {
+                height: 80px;
+                width: 80px;
+                margin: 15px 0;
+             }
+
+            svg {
+                height: 50px;
+                width: 50px;
+                @media screen and (max-width:375px) {
+                    height: 70px;
+                    width: 70px;
+                 }
+                @media screen and (min-width:1600px) {
+                    height: 55px;
+                    width: 55px;
+                  }
+            }
+        }
+    }
+}
+.btn-right{
+    @media screen and (max-width: 767px) {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
+}
+.text{
+    @media screen and (max-width: 375px) {
+        text-align: center;
+    }
+}
+

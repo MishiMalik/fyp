@@ -1,0 +1,19 @@
+.btn-yellow{
+    border: none;
+    background-color: $yellow;
+    padding: 8px 12px;
+    border-radius: 18px;
+    @media screen and (max-width: 991px) {
+        padding: 6px 10px;
+     }
+    a{
+        color: $white !important;
+         font-weight: 400 !important;
+         text-decoration: none;
+         font-size: 16px;
+         @media screen and (max-width: 991px) {
+            font-size: 14px;
+         }
+    }
+}
+

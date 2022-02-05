@@ -1,0 +1,140 @@
+body{
+    padding: 0px ;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+
+    /* width */
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: $gray-light;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $blue-light;
+        border-radius: 5px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $blue-light;
+    }
+}
+.col-25-2{
+    width: 18% !important;
+    @media screen and (max-width: 1260px) {
+        width: 0% !important;
+        display: none;
+    }
+}
+
+.col-25{
+    width: 18% ;
+    @media screen and (max-width: 1150px) {
+        width: 22% ;
+    }
+    @media screen and (max-width: 767px) {
+        width: 0% ;
+    }
+}
+
+.col-50{
+    width: 64% !important;
+    @media screen and (max-width: 1260px) {
+        width: 82% !important;
+    }
+    @media screen and (max-width: 1150px) {
+        width: 78% !important;
+    }
+    @media screen and (max-width: 767px) {
+        width: 100% !important;
+    }
+}
+.col-80{
+        width: 82% !important;
+        @media screen and (max-width: 767px) {
+            width: 100% !important;
+        }
+}
+
+// color classes
+.primary-light{
+    color: $primary-light;
+}
+
+
+// order classes
+.order1{
+    order: 2 !important;
+    @media screen and (max-width: 767px) {
+        order: 1 !important;
+     }
+}
+.order2{
+    order: 1 !important;
+    @media screen and (max-width: 767px) {
+        order: 2 !important;
+     }
+}
+
+@media screen and (min-width:1600px) {
+                      /*COMMON*/
+    
+  
+                      .DPDCt12 {
+                        
+                        font-size: 60%
+                      }
+    
+                      .DPDCtn {
+
+                        width: 15px;
+                        height: 15px;
+                      }
+    
+    
+                      .DPDCs {
+                        margin: .96em 0 0 -3px;
+                        font-size: 100%;
+                      }
+    
+                      .DPDCs sup {
+                       
+                        font-size: 75%
+                      }
+ 
+    
+                      /* night-sign color = time & date color */
+                      .DPDCt {
+                        font-size: 60px;
+                        font-weight:600;
+                      }
+    
+                      /* time font-size */
+                      .DPDCh,
+                      .DPDCd {
+                        font-size: 20px;
+                        font-weight: 600;
+                      }
+}
+.order1sm{
+    order: 1;
+    @media screen and (max-width:375px){
+        order: 2;
+    }
+}
+.order2sm{
+    order: 2;
+    @media screen and (max-width:375px){
+        order: 1;
+    }
+}
+.clr-blue{
+    color: $primary-light !important;
+}
