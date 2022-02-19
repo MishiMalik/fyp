@@ -1,0 +1,194 @@
+.challan-row{
+/* Layout */
+.challan-row:after {
+    content: "";
+  display: table;
+  clear: both;
+  }
+  .challan-column{
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+
+
+
+/* form1 */
+.form1{
+    /* background-color: aquamarine; */
+    border: 1px solid black;
+    padding:10px;
+    line-height: 8px;
+}
+.due-date-parent{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+   justify-content: space-between;
+}
+.child-padding{
+    padding-right:22px;
+}
+.roll-num-parent{
+    justify-content: space-between;
+}
+.total{
+    line-height: 15px;
+    font-size: 13px;
+}
+
+/* Text Size */
+.x-small{
+font-size: smaller;
+}
+.small{
+    font-size: small;
+
+}
+.large{
+    font-size: large;
+}
+
+
+
+
+
+/* Text style */
+.text-center{
+  text-align: center;
+}
+.d-flex{
+display: flex !important;
+}
+.text-right{
+  text-align: right !important;
+}
+.float-right{
+  text-align: right !important;
+}
+.font-weight-bold{
+  font-weight:bolder !important;
+}
+.pl{
+  padding-left: 10px;
+}
+.mt-1{
+  margin-top:6px !important;
+}
+.mt-2{
+  margin-top: 7px !important;
+}
+.mt-3{
+   margin-top: 8px !important;
+}
+.mt-4{
+  margin-top: 10px !important;
+}
+
+
+
+
+/* Table */
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+  }
+  .t-head{
+      border:1.5px solid black;
+  }
+  #customers th {
+    padding-top: 5px;
+    padding-bottom: 8px;
+    font-weight: 800;
+  } 
+  .border-bottom{
+    border-bottom: 1px solid black !important;
+  }
+  #customers td {
+   
+    padding-top: 5px;
+    padding-bottom: 8px;
+  }
+  
+  #customers th {
+   
+    padding-bottom: 12px;
+    color:black;
+
+  }
+  .head-end{
+    text-align: left;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+    margin: 0;
+  }
+
+
+
+
+  /*challan adjustment*/
+  .default-font {
+    font-size: 12px;
+  }
+  #challan-txt {
+    font-size: 13px;
+  }
+  #bank-name {
+    font-size: 14px;
+  }
+  .account-no {
+    font-size: 14px;
+  }
+  .child-padding {
+    font-size: 13px;
+  }
+  .university-name {
+    font-size: 15px;
+  }
+  .fall-year {
+    font-family: sans-serif;
+  }
+  .program-name {
+    font-size: 12px !important;
+  }
+  .semester-season {
+    font-size: 15px;
+  }
+  .barocde-no {
+    font-size: 14px;
+  }
+  .cashier {
+    font-weight: bold;
+    font-size: 12px;
+  }
+}
+
+.apply-bus2{
+    a{
+        background-color: $gray-light2;
+    }
+}
+.pay-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid $primary-light;
+  color: $primary-light;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0px 10px;
+  padding:5px 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  &:hover{
+   text-decoration: none;
+  }
+}
+// .generate-challan{
+//     display: none;
+// }

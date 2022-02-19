@@ -1,0 +1,178 @@
+.small-label{
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+}
+.driver-detail{
+font-size: 18px;
+font-weight: 600;
+color: $primary-light;
+}
+.apply-bus{
+    font-size: 30px !important;
+    color: $primary-light;
+    font-weight: 600;
+    justify-content: center;
+}
+.apply-bus2{
+    font-size: 25px !important;
+    color: $primary-light;
+    font-weight: 500;
+    justify-content: center;
+}
+.apply-bus{
+        background-color: transparent !important;
+        border: none;
+        a{
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            background-color: $primary-light;
+            padding: 10px 20px;
+            border-radius: 4px !important;
+            text-decoration: none;
+        }
+    
+}
+.apply-label{
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: $primary-light !important;
+    margin-left: 5px;
+}
+.apply-textarea{
+    border: none;
+    border-bottom: 2px solid $gray-light !important;
+}
+.apply-textarea:focus{
+    border-bottom: 2px solid $primary-light !important;
+    outline: none;
+    box-shadow: none;
+}
+.detail-text{
+  font-size: 16px !important;
+  font-weight: 600;
+}
+  
+  .floating__input {
+    padding: 13px 10px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    border-bottom: 0.1rem solid var(--input__border);
+    transition: border-color 0.2s ease;
+    caret-color: var(--color__accent);
+    color: white ;
+  }
+  
+  .floating:hover .floating__input {
+    border-color: var(--input__border--hover);
+  }
+  
+  .floating__input::placeholder {
+    color: rgba(0, 0, 0, 0);
+  }
+  
+  .floating__label {
+    display: block;
+    position: relative;
+    max-height: 0;
+    font-weight: 500;
+    pointer-events: none;
+  }
+  
+  .floating__label::before {
+    color: $primary-light;
+    content: attr(data-content);
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    // filter: blur(0);
+    backface-visibility: hidden;
+    transform-origin: left top;
+    transition: transform 0.2s ease;
+    left: .5rem;
+    top: 0px;
+    position: relative;
+    
+  }
+  
+  .floating__label::after {
+    bottom: 1rem;
+    content: "";
+    height: 0.1rem;
+    position: absolute;
+    transition: transform 180ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 180ms cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease;
+    opacity: 0;
+    left: 0;
+    top: 100%;
+    margin-top: -0.1rem;
+    transform: scale3d(0, 1, 1);
+    width: 100%;
+    background-color: var(--color__accent);
+    color: $primary-light !important;
+  }
+  
+  .floating__input:focus + .floating__label::after {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+    color: $primary-light !important;
+  }
+  
+  .floating__input:placeholder-shown + .floating__label::before {
+    transform: translate3d(0, -2.2rem, 0) scale3d(1, 1, 1);
+  }
+  
+  .floating__label::before,
+  .floating__input:focus + .floating__label::before {
+    transform: translate3d(0, -3.12rem, 0) scale3d(0.82, 0.82, 1);
+  }
+  
+  .floating__input:focus + .floating__label::before {
+    color: $primary-light;
+  }
+  
+  
+  .transport-input {
+    background-color: white;
+    border-width: 0;
+    display: block;
+    width: 100%;
+    color: black !important;
+    border-bottom: 2px solid $gray-light !important;
+  }
+  .transport-input:hover,
+  .transport-input:focus{
+    outline: none;
+    border-bottom: 2px solid $primary-light !important;
+  }
+  
+//   fieldset {
+
+  
+  .hidden--visually {
+    border: 0;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+.ck.ck-editor__editable_inline[dir=ltr] {
+  border: 1px solid $gray-light2;
+  border-top: 0px;
+}
+.ck.ck-editor__editable_inline>:last-child{
+  font-size: 14px ;
+}
+.ck.ck-editor__editable:not(.ck-editor__nested-editable){
+  min-height: 100px;
+}
+.ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-focused{
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid $gray-light2;
+}

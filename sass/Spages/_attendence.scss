@@ -1,0 +1,55 @@
+.present{
+ color: $green;
+ font-weight: 600 !important;
+ text-transform: capitalize;
+}
+.absent{
+    color: $red;
+    font-weight: 600 !important;
+    text-transform: capitalize;
+   }
+   .total-atendence-cel1{
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
+       .total-atendence{
+        font-size: 18px;
+        color: $green;
+        font-weight: 500;
+        &-number{
+            font-size: 18px;
+            color: $green;
+            font-weight: 500;
+        }
+       }
+   }
+   .total-atendence-cel2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .total-atendence{
+     font-size: 18px;
+     color: $red;
+     font-weight: 500;
+     &-number{
+         font-size: 18px;
+         color: $red;
+         font-weight: 500;
+     }
+    }
+}
+.total-atendence-cel3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .total-atendence{
+     font-size: 18px;
+     color: $primary-light;
+     font-weight: 500;
+     &-number{
+         font-size: 18px;
+         color: $primary-light;
+         font-weight: 500;
+     }
+    }
+}

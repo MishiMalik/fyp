@@ -1,0 +1,68 @@
+.notifications__list{
+    list-style: none;
+    border-top: 2px solid $gray-light2;
+    li{
+        border-top: 1px solid $gray-light2;
+        padding: 7px 0px;
+        &:last-child{
+            border-bottom: 1px solid $gray-light2;
+        }
+        &:hover{
+            background-color: rgba(0, 123, 255, 0.466) !important;
+        }
+      a{
+          display: flex;
+          align-items: flex-start;
+          text-decoration: none;
+        .notifications__list-img {
+            height: 60px;
+            width: 60px;
+            backface-visibility: none;
+            margin: 0px 10px 0px 5px;
+            overflow: hidden;
+            border-radius: 100%;
+
+            img {
+                width: 60px;
+                height: auto;
+                border-radius: 100%;
+                
+            }
+        }
+        .notifications__list-text{
+            width: 90%;
+
+            p {
+                white-space: nowrap;
+                width: 90%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 18px;
+                font-weight: 500;
+                color: black;
+            }
+            .seen{
+              font-weight: 400 !important;
+              font-size: 17px !important;
+            }
+            .name-time1{
+                display: flex;
+                span{
+                    color: $primary-light;
+                    font-size: 16px;
+                    font-weight: 600 ;
+                }
+            }
+            .name-time{
+                display: flex;
+                span{
+                    color: black;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+      }
+    }
+    
+}

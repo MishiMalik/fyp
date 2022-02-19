@@ -25,11 +25,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!--Dropzone  -->
-    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
-
-
-    <title>Student Portal-Enrollments</title>
+    <title>Student Portal-Attendence</title>
 </head>
 
 <body id="body">
@@ -240,7 +236,7 @@
                             </svg>Enrollments</a>
                     </li>
 
-                    <li class="left__list-item active"><a href="assignments.html">
+                    <li class="left__list-item"><a href="assignments.html">
 
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
                                 <path
@@ -249,7 +245,7 @@
                             </svg>Assignments</a>
                     </li>
 
-                    <li class="left__list-item"><a href="attendence.html">
+                    <li class="left__list-item active"><a href="attendence.html">
 
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                 <path
@@ -639,153 +635,272 @@
                 </div>
 
                 <!-- ==================main-body================= -->
-                <div class="container mt-3">
-
+                <div class="container mt-3 mb-3">
                     <div class="row d-flex justify-content-center">
-
                         <div class="col-lg-11 profile__card enrollments">
                             <div class="enrollments-header">
-                                <h2 class="secondary-heading">EAD Assignments 1</h2>
-                                <p class="dead-line mb-0 submitted">Submitted</p>
+                                <h2 class="secondary-heading">Attendence</h2>
+                                <div class="form-group enrollments-select-div">
+                                    <select class="form-control enrollments-select" id="exampleFormControlSelect1">
+                                        <option>TOA</option>
+                                        <option>FYP</option>
+                                        <option>Islamiyat</option>
+                                        <option selected>Statistics</option>
+                                        <option>EAD</option>
+                                    </select>
+                                </div>
                             </div>
+
+                            <h3 class="tertiary-heading mt-4">
+                                Probability and statistics Attendence:
+                            </h3>
+
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <div class="tertiary-heading mt-3">
-                                        Solve and Submit the Given Topics Questions with the help of one
-                                        example for each topic (write down the rules, if any)
+                                    <div class="table-data">
+                                        <table id="example" class="table table-striped table-bordered"
+                                            style="width:100%">
+                                            <thead>
+                                                <tr class="thead">
+                                                    <th class="s-no">S.No</th>
+                                                    <th class="code">Lecture</th>
+                                                    <th class="ch">Date</th>
+                                                    <th class="">Status</th>
+                                                    <th class="ch">Day</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="td">1</td>
+                                                    <td class="td">Lecture 1</td>
+                                                    <td class="td">1-1-2022</td>
+                                                    <td class="td">
+                                                        <div class="d-flex justify-content-between">
+                                                            <p class="mb-0 pb-0 present">Present</p>
+                                                            <svg width="24" height="24" viewBox="0 0 22 23" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M2.0625 2.2627C3.3831 0.942098 5.17421 0.200195 7.04182 0.200195H14.9582C16.8258 0.200195 18.6169 0.942098 19.9375 2.2627C21.2581 3.58329 22 5.37441 22 7.24201V15.1584C22 17.026 21.2581 18.8171 19.9375 20.1377C18.6169 21.4583 16.8258 22.2002 14.9582 22.2002H7.04182C5.17421 22.2002 3.3831 21.4583 2.0625 20.1377C0.741903 18.8171 0 17.026 0 15.1584V7.24201C0 5.37441 0.741903 3.58329 2.0625 2.2627Z"
+                                                                    fill="white" />
+                                                                <path
+                                                                    d="M7.0788 9.8127C6.55272 9.2806 5.70527 9.28623 5.18597 9.82526C4.66666 10.3643 4.67215 11.2326 5.19822 11.7647L8.59919 15.2046C9.1587 15.7705 10.0715 15.7228 10.5719 15.1014L16.094 8.24431C16.5644 7.6601 16.4836 6.79571 15.9134 6.31366C15.3433 5.8316 14.4997 5.91441 14.0292 6.49862L9.4384 12.1993L7.0788 9.8127Z"
+                                                                    fill="#71C11F" />
+                                                            </svg>
+
+                                                        </div>
+                                                    </td>
+                                                    <td class="td">Monday</td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td class="td">2</td>
+                                                    <td class="td">Lecture 2</td>
+                                                    <td class="td">1-1-2022</td>
+                                                    <td class="td">
+                                                        <div class="d-flex justify-content-between">
+                                                            <p class="mb-0 pb-0 present">Present</p>
+                                                            <svg width="24" height="24" viewBox="0 0 22 23" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M2.0625 2.2627C3.3831 0.942098 5.17421 0.200195 7.04182 0.200195H14.9582C16.8258 0.200195 18.6169 0.942098 19.9375 2.2627C21.2581 3.58329 22 5.37441 22 7.24201V15.1584C22 17.026 21.2581 18.8171 19.9375 20.1377C18.6169 21.4583 16.8258 22.2002 14.9582 22.2002H7.04182C5.17421 22.2002 3.3831 21.4583 2.0625 20.1377C0.741903 18.8171 0 17.026 0 15.1584V7.24201C0 5.37441 0.741903 3.58329 2.0625 2.2627Z"
+                                                                    fill="white" />
+                                                                <path
+                                                                    d="M7.0788 9.8127C6.55272 9.2806 5.70527 9.28623 5.18597 9.82526C4.66666 10.3643 4.67215 11.2326 5.19822 11.7647L8.59919 15.2046C9.1587 15.7705 10.0715 15.7228 10.5719 15.1014L16.094 8.24431C16.5644 7.6601 16.4836 6.79571 15.9134 6.31366C15.3433 5.8316 14.4997 5.91441 14.0292 6.49862L9.4384 12.1993L7.0788 9.8127Z"
+                                                                    fill="#71C11F" />
+                                                            </svg>
+
+                                                        </div>
+                                                    </td>
+                                                    <td class="td">Monday</td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td class="td">3</td>
+                                                    <td class="td">Lecture 3</td>
+                                                    <td class="td">3-1-2022</td>
+                                                    <td class="td">
+                                                        <div class="d-flex justify-content-between">
+                                                            <p class="mb-0 pb-0 present">Present</p>
+                                                            <svg width="24" height="24" viewBox="0 0 22 23" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M2.0625 2.2627C3.3831 0.942098 5.17421 0.200195 7.04182 0.200195H14.9582C16.8258 0.200195 18.6169 0.942098 19.9375 2.2627C21.2581 3.58329 22 5.37441 22 7.24201V15.1584C22 17.026 21.2581 18.8171 19.9375 20.1377C18.6169 21.4583 16.8258 22.2002 14.9582 22.2002H7.04182C5.17421 22.2002 3.3831 21.4583 2.0625 20.1377C0.741903 18.8171 0 17.026 0 15.1584V7.24201C0 5.37441 0.741903 3.58329 2.0625 2.2627Z"
+                                                                    fill="white" />
+                                                                <path
+                                                                    d="M7.0788 9.8127C6.55272 9.2806 5.70527 9.28623 5.18597 9.82526C4.66666 10.3643 4.67215 11.2326 5.19822 11.7647L8.59919 15.2046C9.1587 15.7705 10.0715 15.7228 10.5719 15.1014L16.094 8.24431C16.5644 7.6601 16.4836 6.79571 15.9134 6.31366C15.3433 5.8316 14.4997 5.91441 14.0292 6.49862L9.4384 12.1993L7.0788 9.8127Z"
+                                                                    fill="#71C11F" />
+                                                            </svg>
+
+                                                        </div>
+                                                    </td>
+                                                    <td class="td">Tuesday</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td">4</td>
+                                                    <td class="td">Lecture 4</td>
+                                                    <td class="td">3-1-2022</td>
+                                                    <td class="td">
+                                                        <div class="d-flex justify-content-between">
+                                                            <p class="mb-0 pb-0 present">Present</p>
+                                                            <svg width="24" height="24" viewBox="0 0 22 23" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M2.0625 2.2627C3.3831 0.942098 5.17421 0.200195 7.04182 0.200195H14.9582C16.8258 0.200195 18.6169 0.942098 19.9375 2.2627C21.2581 3.58329 22 5.37441 22 7.24201V15.1584C22 17.026 21.2581 18.8171 19.9375 20.1377C18.6169 21.4583 16.8258 22.2002 14.9582 22.2002H7.04182C5.17421 22.2002 3.3831 21.4583 2.0625 20.1377C0.741903 18.8171 0 17.026 0 15.1584V7.24201C0 5.37441 0.741903 3.58329 2.0625 2.2627Z"
+                                                                    fill="white" />
+                                                                <path
+                                                                    d="M7.0788 9.8127C6.55272 9.2806 5.70527 9.28623 5.18597 9.82526C4.66666 10.3643 4.67215 11.2326 5.19822 11.7647L8.59919 15.2046C9.1587 15.7705 10.0715 15.7228 10.5719 15.1014L16.094 8.24431C16.5644 7.6601 16.4836 6.79571 15.9134 6.31366C15.3433 5.8316 14.4997 5.91441 14.0292 6.49862L9.4384 12.1993L7.0788 9.8127Z"
+                                                                    fill="#71C11F" />
+                                                            </svg>
+
+                                                        </div>
+                                                    </td>
+                                                    <td class="td">Wednesday</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td">5</td>
+                                                    <td class="td">Lecture 5</td>
+                                                    <td class="td">7-1-2022</td>
+                                                    <td class="td">
+                                                        <div class="d-flex justify-content-between">
+                                                            <p class="mb-0 pb-0 absent">Absent</p>
+
+                                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M6.11111 0C2.73604 0 0 2.73604 0 6.11111V15.8889C0 19.264 2.73604 22 6.11111 22H15.8889C19.264 22 22 19.264 22 15.8889V6.11111C22 2.73604 19.264 0 15.8889 0H6.11111Z"
+                                                                    fill="white" />
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M9.41421 10.8284L7.29289 8.70711C6.90237 8.31658 6.90237 7.68342 7.29289 7.29289C7.68342 6.90237 8.31658 6.90237 8.70711 7.29289L10.8284 9.41421L12.9497 7.29289C13.3403 6.90237 13.9734 6.90237 14.364 7.29289C14.7545 7.68342 14.7545 8.31658 14.364 8.70711L12.2426 10.8284L14.364 12.9497C14.7545 13.3403 14.7545 13.9734 14.364 14.364C13.9734 14.7545 13.3403 14.7545 12.9497 14.364L10.8284 12.2426L8.70711 14.364C8.31658 14.7545 7.68342 14.7545 7.29289 14.364C6.90237 13.9734 6.90237 13.3403 7.29289 12.9497L9.41421 10.8284Z"
+                                                                    fill="#F5122E" />
+                                                            </svg>
+
+
+                                                        </div>
+                                                    </td>
+                                                    <td class="td">Monday</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td">6</td>
+                                                    <td class="td">Lecture 6</td>
+                                                    <td class="td">3-1-2022</td>
+                                                    <td class="td">
+                                                        <div class="d-flex justify-content-between">
+                                                            <p class="mb-0 pb-0 present">Present</p>
+                                                            <svg width="24" height="24" viewBox="0 0 22 23" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M2.0625 2.2627C3.3831 0.942098 5.17421 0.200195 7.04182 0.200195H14.9582C16.8258 0.200195 18.6169 0.942098 19.9375 2.2627C21.2581 3.58329 22 5.37441 22 7.24201V15.1584C22 17.026 21.2581 18.8171 19.9375 20.1377C18.6169 21.4583 16.8258 22.2002 14.9582 22.2002H7.04182C5.17421 22.2002 3.3831 21.4583 2.0625 20.1377C0.741903 18.8171 0 17.026 0 15.1584V7.24201C0 5.37441 0.741903 3.58329 2.0625 2.2627Z"
+                                                                    fill="white" />
+                                                                <path
+                                                                    d="M7.0788 9.8127C6.55272 9.2806 5.70527 9.28623 5.18597 9.82526C4.66666 10.3643 4.67215 11.2326 5.19822 11.7647L8.59919 15.2046C9.1587 15.7705 10.0715 15.7228 10.5719 15.1014L16.094 8.24431C16.5644 7.6601 16.4836 6.79571 15.9134 6.31366C15.3433 5.8316 14.4997 5.91441 14.0292 6.49862L9.4384 12.1993L7.0788 9.8127Z"
+                                                                    fill="#71C11F" />
+                                                            </svg>
+
+                                                        </div>
+                                                    </td>
+                                                    <td class="td">Tuesday</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td">7</td>
+                                                    <td class="td">Lecture 7</td>
+                                                    <td class="td">3-1-2022</td>
+                                                    <td class="td">
+                                                        <div class="d-flex justify-content-between">
+                                                            <p class="mb-0 pb-0 present">Present</p>
+                                                            <svg width="24" height="24" viewBox="0 0 22 23" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M2.0625 2.2627C3.3831 0.942098 5.17421 0.200195 7.04182 0.200195H14.9582C16.8258 0.200195 18.6169 0.942098 19.9375 2.2627C21.2581 3.58329 22 5.37441 22 7.24201V15.1584C22 17.026 21.2581 18.8171 19.9375 20.1377C18.6169 21.4583 16.8258 22.2002 14.9582 22.2002H7.04182C5.17421 22.2002 3.3831 21.4583 2.0625 20.1377C0.741903 18.8171 0 17.026 0 15.1584V7.24201C0 5.37441 0.741903 3.58329 2.0625 2.2627Z"
+                                                                    fill="white" />
+                                                                <path
+                                                                    d="M7.0788 9.8127C6.55272 9.2806 5.70527 9.28623 5.18597 9.82526C4.66666 10.3643 4.67215 11.2326 5.19822 11.7647L8.59919 15.2046C9.1587 15.7705 10.0715 15.7228 10.5719 15.1014L16.094 8.24431C16.5644 7.6601 16.4836 6.79571 15.9134 6.31366C15.3433 5.8316 14.4997 5.91441 14.0292 6.49862L9.4384 12.1993L7.0788 9.8127Z"
+                                                                    fill="#71C11F" />
+                                                            </svg>
+
+                                                        </div>
+                                                    </td>
+                                                    <td class="td">Wednesday</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td">8</td>
+                                                    <td class="td">Lecture 8</td>
+                                                    <td class="td">7-1-2022</td>
+                                                    <td class="td">
+                                                        <div class="d-flex justify-content-between">
+                                                            <p class="mb-0 pb-0 absent">Absent</p>
+
+                                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M6.11111 0C2.73604 0 0 2.73604 0 6.11111V15.8889C0 19.264 2.73604 22 6.11111 22H15.8889C19.264 22 22 19.264 22 15.8889V6.11111C22 2.73604 19.264 0 15.8889 0H6.11111Z"
+                                                                    fill="white" />
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M9.41421 10.8284L7.29289 8.70711C6.90237 8.31658 6.90237 7.68342 7.29289 7.29289C7.68342 6.90237 8.31658 6.90237 8.70711 7.29289L10.8284 9.41421L12.9497 7.29289C13.3403 6.90237 13.9734 6.90237 14.364 7.29289C14.7545 7.68342 14.7545 8.31658 14.364 8.70711L12.2426 10.8284L14.364 12.9497C14.7545 13.3403 14.7545 13.9734 14.364 14.364C13.9734 14.7545 13.3403 14.7545 12.9497 14.364L10.8284 12.2426L8.70711 14.364C8.31658 14.7545 7.68342 14.7545 7.29289 14.364C6.90237 13.9734 6.90237 13.3403 7.29289 12.9497L9.41421 10.8284Z"
+                                                                    fill="#F5122E" />
+                                                            </svg>
+
+
+                                                        </div>
+                                                    </td>
+                                                    <td class="td">Tuesday</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td">9</td>
+                                                    <td class="td">Lecture 9</td>
+                                                    <td class="td">3-1-2022</td>
+                                                    <td class="td">
+                                                        <div class="d-flex justify-content-between">
+                                                            <p class="mb-0 pb-0 present">Present</p>
+                                                            <svg width="24" height="24" viewBox="0 0 22 23" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M2.0625 2.2627C3.3831 0.942098 5.17421 0.200195 7.04182 0.200195H14.9582C16.8258 0.200195 18.6169 0.942098 19.9375 2.2627C21.2581 3.58329 22 5.37441 22 7.24201V15.1584C22 17.026 21.2581 18.8171 19.9375 20.1377C18.6169 21.4583 16.8258 22.2002 14.9582 22.2002H7.04182C5.17421 22.2002 3.3831 21.4583 2.0625 20.1377C0.741903 18.8171 0 17.026 0 15.1584V7.24201C0 5.37441 0.741903 3.58329 2.0625 2.2627Z"
+                                                                    fill="white" />
+                                                                <path
+                                                                    d="M7.0788 9.8127C6.55272 9.2806 5.70527 9.28623 5.18597 9.82526C4.66666 10.3643 4.67215 11.2326 5.19822 11.7647L8.59919 15.2046C9.1587 15.7705 10.0715 15.7228 10.5719 15.1014L16.094 8.24431C16.5644 7.6601 16.4836 6.79571 15.9134 6.31366C15.3433 5.8316 14.4997 5.91441 14.0292 6.49862L9.4384 12.1993L7.0788 9.8127Z"
+                                                                    fill="#71C11F" />
+                                                            </svg>
+
+                                                        </div>
+                                                    </td>
+                                                    <td class="td">Wednesday</td>
+                                                </tr>
+
+
+
+
+                                            </tbody>
+                                        </table>
                                     </div>
-                                    <div class="assignment-text mt-2">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id tempora
-                                        eligendi quibusdam est quos animi, inventore error labore rem!
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, ut.
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt blanditiis
-                                        unde veritatis quia officia corrupti explicabo est sapiente nisi! Facere?
-                                    </div>
-                                </div>
-                                <!-- <div class="col-lg-12">
-                                   <button class="submitted mt-5"> Submitted </button>
-                                </div> -->
-                            </div>
-
-
-                            <div class="enrollments-header mt-5">
-                                <h2 class="secondary-heading">Previous Assignments</h2>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6  p-2">
-                                    <a href="assignment-not-submitted.html" class=" dashboard__assignment-card">
-                                        <div class="dashboard__assignment-card-heading ">EAD</div>
-                                        <span>Assignment 1</span>
-                                        <div class="icon mt-1">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-                                                <linearGradient id="RX3zSxrOy6Pry9vJ_10gba" x1="32" x2="32" y1="12.167"
-                                                    y2="52.292" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
-                                                    <stop offset="0" stop-color="#6dc7ff" />
-                                                    <stop offset="1" stop-color="#e6abff" />
-                                                </linearGradient>
-                                                <path fill="url(#RX3zSxrOy6Pry9vJ_10gba)"
-                                                    d="M42.836,32c6.138-7.359,10.559-15.375,7.548-18.385c-3.003-3.005-11.041,1.429-18.383,7.549 c-7.358-6.14-15.374-10.564-18.386-7.549c-3.01,3.01,1.41,11.026,7.548,18.384c-6.139,7.358-10.56,15.374-7.548,18.385 c0.667,0.667,1.579,0.969,2.675,0.969c3.854,0,9.981-3.74,15.711-8.519c5.721,4.768,11.863,8.515,15.718,8.515 c1.092-0.001,2.002-0.302,2.665-0.965C53.396,47.374,48.975,39.358,42.836,32z M48.971,48.971c-1.363,1.363-7.269-0.645-15.44-7.447 c0.73-0.641,1.452-1.292,2.155-1.953l-1.371-1.457c-0.79,0.743-1.558,1.433-2.315,2.096c-0.703-0.616-1.416-1.255-2.146-1.939 l-1.367,1.461c0.647,0.606,1.312,1.203,1.983,1.791c-8.168,6.804-14.073,8.817-15.44,7.448c-1.369-1.369,0.644-7.271,7.446-15.438 c0.64,0.729,1.292,1.449,1.954,2.151l1.457-1.371c-0.743-0.789-1.432-1.557-2.095-2.313c0.664-0.757,1.353-1.525,2.096-2.314 l-1.457-1.371c-0.661,0.703-1.314,1.422-1.954,2.152c-6.802-8.167-8.814-14.069-7.446-15.437c1.37-1.367,7.272,0.646,15.438,7.447 c-0.672,0.589-1.334,1.188-1.982,1.794l1.367,1.459c0.731-0.685,1.443-1.324,2.146-1.939c0.758,0.665,1.527,1.354,2.317,2.099 l1.371-1.457c-0.704-0.662-1.424-1.316-2.155-1.958c8.169-6.801,14.076-8.81,15.438-7.445c1.368,1.368-0.645,7.271-7.446,15.438 c-0.641-0.73-1.294-1.451-1.956-2.154l-1.457,1.371c0.744,0.79,1.434,1.559,2.098,2.316c-0.664,0.757-1.353,1.525-2.096,2.314 l1.457,1.371c0.661-0.703,1.314-1.422,1.954-2.152C48.327,41.7,50.34,47.602,48.971,48.971z" />
-                                                <linearGradient id="RX3zSxrOy6Pry9vJ_10gbb" x1="32" x2="32" y1="12.167"
-                                                    y2="52.292" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
-                                                    <stop offset="0" stop-color="#6dc7ff" />
-                                                    <stop offset="1" stop-color="#e6abff" />
-                                                </linearGradient>
-                                                <path fill="url(#RX3zSxrOy6Pry9vJ_10gbb)"
-                                                    d="M32 28A4 4 0 1 0 32 36A4 4 0 1 0 32 28Z" />
-                                                <linearGradient id="RX3zSxrOy6Pry9vJ_10gbc" x1="32" x2="32" y1="5.667"
-                                                    y2="58.846" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
-                                                    <stop offset="0" stop-color="#1a6dff" />
-                                                    <stop offset="1" stop-color="#c822ff" />
-                                                </linearGradient>
-                                                <path fill="url(#RX3zSxrOy6Pry9vJ_10gbc)"
-                                                    d="M58,32c0-4.141-8.51-6.761-18.345-7.655C38.761,14.51,36.141,6,32,6s-6.761,8.51-7.655,18.345 C14.51,25.239,6,27.859,6,32s8.51,6.761,18.345,7.655C25.239,49.49,27.859,58,32,58s6.761-8.51,7.655-18.345 C49.49,38.761,58,36.141,58,32z M32,8c2.031,0,4.71,6,5.653,16.188C35.782,24.064,33.883,24,32,24s-3.782,0.064-5.653,0.188 C27.29,14,29.969,8,32,8z M38,32c0,2.052-0.072,3.982-0.193,5.807C35.982,37.928,34.052,38,32,38s-3.982-0.072-5.807-0.193 C26.072,35.982,26,34.052,26,32s0.072-3.982,0.193-5.807C28.018,26.072,29.948,26,32,26s3.982,0.072,5.807,0.193 C37.928,28.018,38,29.948,38,32z M8,32c0-2.031,6-4.71,16.188-5.653C24.064,28.218,24,30.117,24,32s0.064,3.782,0.188,5.653 C14,36.71,8,34.031,8,32z M32,56c-2.031,0-4.71-6-5.653-16.188C28.218,39.936,30.117,40,32,40s3.782-0.064,5.653-0.188 C36.71,50,34.031,56,32,56z M39.813,37.653C39.936,35.782,40,33.883,40,32s-0.064-3.782-0.188-5.653C50,27.29,56,29.969,56,32 S50,36.71,39.813,37.653z" />
-                                            </svg>
-                                        </div>
-                                        <div class="not-submitted date d-flex justify-content-center">
-                                            <!-- <span></span> -->
-                                            <span class="last-date">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                    class="mr-1">
-                                                    <path
-                                                        d="M12 0C5.371094 0 0 5.371094 0 12C0 18.628906 5.371094 24 12 24C18.628906 24 24 18.628906 24 12C24 5.371094 18.628906 0 12 0 Z M 12 2C17.523438 2 22 6.476563 22 12C22 17.523438 17.523438 22 12 22C6.476563 22 2 17.523438 2 12C2 6.476563 6.476563 2 12 2 Z M 10.9375 3.875L10.5 12.0625L10.59375 12.9375L16.75 18.375L17.71875 17.375L12.625 11.96875L12.1875 3.875Z" />
-                                                </svg>
-                                                Not Submitted
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="col-lg-4  col-md-6 p-2">
-                                    <a href="/studentsPortal/assignment-prev.html" class=" dashboard__assignment-card">
-                                        <div class="dashboard__assignment-card-heading ">EAD</div>
-                                        <span>Assignment 2</span>
-                                        <div class="icon mt-1">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-                                                <path fill="#689f38"
-                                                    d="M34,23c-1.7,0-3-1.3-3-3s1.3-3,3-3c2.8,0,3-1,3-1.7c0-0.5-0.4-1.3-2-1.3c-1.7,0-2.9,1.1-3,1.2 c-1.2,1.2-3.1,1.1-4.2-0.1c-1.1-1.2-1.1-3.1,0.1-4.2C28.2,10.5,31,8,35,8c5,0,8,3.6,8,7C43,19.9,39.5,23,34,23z" />
-                                                <path fill="#689f38"
-                                                    d="M34,17c-1.7,0-3,1.3-3,3s1.3,3,3,3c3.7,0,4,1.1,4,1.5s0,1.5-3,1.5c-2.2,0-3.7-0.6-3.8-0.7 c-1.5-0.7-3.3,0-3.9,1.5c-0.7,1.5,0,3.3,1.5,4C29.1,31,31.5,32,35,32c6.6,0,9-4,9-7.5C44,22.2,43,17,34,17z" />
-                                                <path fill="#ffc107"
-                                                    d="M29,41H16c-1.7,0-3-1.3-3-3s1.3-3,3-3h13c1.7,0,3,1.3,3,3S30.7,41,29,41z" />
-                                                <path fill="#ff3d00"
-                                                    d="M11.5,30C9.6,30,8,28.4,8,26.5v-16C8,8.6,9.6,7,11.5,7c1.9,0,3.5,1.6,3.5,3.5v16 C15,28.4,13.4,30,11.5,30z" />
-                                                <path fill="#ff3d00"
-                                                    d="M10 7.3L5.4 9.8C4.5 10.2 4 11.2 4 12.2 4 13.8 5.1 15 6.4 15h3.5L10 7.3zM16 30H7c-1.7 0-3-1.3-3-3s1.3-3 3-3h9c1.7 0 3 1.3 3 3S17.7 30 16 30z" />
-                                                <path fill="#ffc107"
-                                                    d="M16,41c-0.9,0-1.7-0.4-2.3-1.1c-1.1-1.3-0.9-3.2,0.4-4.2c2.4-2,4.5-3.6,6.1-4.8 c4.3-3.3,4.8-3.8,4.8-5.4c0-0.4-0.1-2.5-3-2.5c-2.3,0-4.2,1.4-4.2,1.4c-1.3,1-3.2,0.8-4.2-0.5c-1-1.3-0.8-3.2,0.5-4.2 c0.3-0.3,3.5-2.6,7.8-2.6c5.8,0,9,4.4,9,8.5c0,4.7-2.7,6.8-7.2,10.2c-1.6,1.2-3.6,2.7-5.9,4.6C17.4,40.8,16.7,41,16,41z" />
-                                            </svg>
-                                        </div>
-                                        <div class="submitted-date">
-                                            <span>Submited on:</span>
-                                            <span class="last-date">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                    class="mr-1">
-                                                    <path
-                                                        d="M12 0C5.371094 0 0 5.371094 0 12C0 18.628906 5.371094 24 12 24C18.628906 24 24 18.628906 24 12C24 5.371094 18.628906 0 12 0 Z M 12 2C17.523438 2 22 6.476563 22 12C22 17.523438 17.523438 22 12 22C6.476563 22 2 17.523438 2 12C2 6.476563 6.476563 2 12 2 Z M 10.9375 3.875L10.5 12.0625L10.59375 12.9375L16.75 18.375L17.71875 17.375L12.625 11.96875L12.1875 3.875Z" />
-                                                </svg>
-                                               20 Jan 2022
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="col-lg-4 p-2">
-                                    <a href="/studentsPortal/assignment-prev.html" class="dashboard__assignment-card">
-                                        <div class="dashboard__assignment-card-heading ">EAD</div>
-                                        <span>Assignment 3</span>
-                                        <div class="icon mt-1">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-                                                <path fill="#8E24AA" d="M38 19L35 13 32 19zM16 19L13 13 10 19z" />
-                                                <path fill="#CE93D8"
-                                                    d="M18 15H30V24H18zM32 19H38V24H32zM10 19H16V24H10z" />
-                                                <path fill="#E1BEE7"
-                                                    d="M37 18L37 24 11 24 11 18 5 18 5 43 43 43 43 18z" />
-                                                <g>
-                                                    <path fill="#9C27B0"
-                                                        d="M33 43H15c0-9 9-12 9-12S33 34 33 43zM43 18L40 12 37 18zM30 15L24 5 18 15zM11 18L8 12 5 18z" />
-                                                </g>
-                                                <g>
-                                                    <path fill="#8E24AA"
-                                                        d="M37 29L35.5 28 34 29 34 34 37 34zM14 29L12.5 28 11 29 11 34 14 34zM27 20L24 18 21 20 21 24 27 24z" />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div class="submitted-date">
-                                            <span>Submited on:</span>
-                                            <span class="last-date">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                    class="mr-1">
-                                                    <path
-                                                        d="M12 0C5.371094 0 0 5.371094 0 12C0 18.628906 5.371094 24 12 24C18.628906 24 24 18.628906 24 12C24 5.371094 18.628906 0 12 0 Z M 12 2C17.523438 2 22 6.476563 22 12C22 17.523438 17.523438 22 12 22C6.476563 22 2 17.523438 2 12C2 6.476563 6.476563 2 12 2 Z M 10.9375 3.875L10.5 12.0625L10.59375 12.9375L16.75 18.375L17.71875 17.375L12.625 11.96875L12.1875 3.875Z" />
-                                                </svg>
-                                               20 Jan 2022
-                                            </span>
-                                        </div>
-                                    </a>
                                 </div>
                             </div>
 
+                            <div class="row mt-3">
+                                <div class="col-lg-4 total-atendence-cel1">
+                                    <p class="total-atendence">
+                                        Total Presents :
+                                    </p>
+                                    <p class="total-atendence-number ml-3">
+                                        10
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 total-atendence-cel2">
+                                    <p class="total-atendence">
+                                        Total Absents :
+                                    </p>
+                                    <p class="total-atendence-number ml-3">
+                                        2
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 total-atendence-cel3">
+                                    <p class="total-atendence">
+                                        Percentage :
+                                    </p>
+                                    <p class="total-atendence-number ml-3">
+                                        80%
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -816,10 +931,36 @@
     <script src="../bootstrap-4.6.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
     <script src="  https://cdn.datatables.net/1.11.4/js/dataTables.bootstrap4.min.js"></script>
-    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
-    <script src="../js/students/app.js"></script>
-    <script src="../js/students/assignments.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
 
+        // Side-Bar//Filter Bar
+        function openNav() {
+            document.getElementById("left-sidebar").style.width = "240px ";
+            // document.getElementById("close").style.display = 'block';
+            document.getElementById("backdrop").style.display = 'block';
+            // document.getElementById("side-btn").style.width = "260px";
+            document.getElementById("body").style.overflowY = 'hidden';
+        }
+
+        function closeNav() {
+            document.getElementById("left-sidebar").style.width = "0";
+            // document.getElementById("close").style.display = 'none';
+            document.getElementById("backdrop").style.display = 'none';
+            // document.getElementById("side-btn").style.width = "0";
+            document.getElementById("body").style.overflowY = 'scroll';
+        }
+
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+
+    <!-- https://code.jquery.com/jquery-3.5.1.js -->
+    <!-- https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js
+  https://cdn.datatables.net/1.11.4/js/dataTables.bootstrap4.min.js -->
 </body>
 
 </html>

@@ -1,0 +1,86 @@
+.complaint-table {
+    thead {
+        tr {
+            border: 1px solid $primary-light;
+            
+        }
+    }
+
+    tr {
+        border: 1px solid $gray-light2;
+    }
+
+    .resolved {
+        color: $green;
+        font-size: 16px;
+        font-family: 600;
+
+        &::before {
+            content: "";
+            height: 10px;
+            width: 10px;
+            border-radius: 100%;
+            background-color: $green;
+            display: inline-block;
+        }
+    }
+
+    .in-progress {
+        color: $yellow;
+        font-size: 16px;
+        font-family: 600;
+
+        &::before {
+            content: "";
+            height: 10px;
+            width: 10px;
+            border-radius: 100%;
+            background-color: $yellow;
+            display: inline-block;
+        }
+    }
+}
+
+.complaint-detail {
+    h3 {
+        color: $primary-light;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    p {
+        text-align: justify;
+    }
+}
+
+.complaint-reply {
+    padding: 7px 20px;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.13);
+     a{
+         text-decoration: none;
+         color: black;
+     }
+    .reply-title {
+        white-space: nowrap;
+        width: 90%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 18px;
+    }
+
+    .complaint-time {
+        color: $primary-light;
+        font-weight: 500;
+    }
+    .reply{
+        color: $green;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .your-reply{
+        color: $yellow;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}

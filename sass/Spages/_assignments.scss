@@ -20,5 +20,54 @@ font-size: 16px;
 font-weight: 500;
 }
 .submitted{
-    color: $primary-light !important;
+    color: $green !important;
+    font-size: 23px;
  }
+
+ .not-submitted{
+    color: $red !important;
+    font-size: 23px;
+ }
+ .submitted-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    span {
+        display: flex;
+        align-items: center;
+        color: $green;
+        font-size: 14px;
+        font-weight: 600;
+        @media screen and (max-width:1024px) {
+            font-size:12px !important;
+         }
+         @media screen and (max-width:991px) {
+            font-size:14px !important;
+         }
+         @media screen and (min-width:1600px) {
+           font-size: 18px;
+        }
+
+        svg {
+            height: 12px !important;
+            width: 12px !important;
+            fill: $green;
+            @media screen and (min-width:1600px) {
+                height: 14px;
+                width: 14px;
+            }
+
+        }
+
+    }
+
+    .last-date {
+        color: $green;
+        font-weight: 600 !important;
+        @media screen and (min-width:1600px) {
+            font-size: 16px;
+        }
+    }
+}

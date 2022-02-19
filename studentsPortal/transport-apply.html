@@ -17,6 +17,10 @@
   <!--  ==style.css== -->
   <link rel="stylesheet" href="../css/sytle.css">
 
+  <!-- cdk Editor -->
+  <script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/decoupled-document/ckeditor.js"></script>
+
+
   <!-- ==fonts== -->
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@300;400;500;600;700;800&display=swap"
@@ -210,7 +214,7 @@
               </svg>
               Home</a></li>
 
-          <li class="left__list-item active      "><a href="profile.html">
+          <li class="left__list-item     "><a href="profile.html">
 
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                 <path
@@ -262,7 +266,7 @@
               </svg>
               Library</a></li> -->
 
-          <li class="left__list-item"><a href="transport.html">
+          <li class="left__list-item active  "><a href="transport.html">
 
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                 <path
@@ -609,76 +613,37 @@
                 <div class="col-lg-11 profile__card">
                     <div class="personal__information">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 porder1">
-                              <h2 class="main-heading mb-0 pb-0">Mehwish Gul</h2>
-                              <p class="mb-0 clr-blue main-text">BSCSF18MM050</p>
-                              <span class="mt-4 d-flex main-text">Semester:<b class="clr-blue">&nbsp;7/8</b></span>
-                              <div class="mt-4 tertiary-heading clr-blue">About</div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 porder2">
-                               <div class="personal__picture">
-                                   <img src="../images/dp.jpg" alt="no-img" class="img-fluid">
-                               </div>
+                            <div class="col-lg-11  text-center porder1 mt-2 mx-auto">
+                            <form action="">
+                                <h1 class="apply-bus2 mb-0 pb-0">Enter Detail To Apply For Bus</h1>
+                                <div class="floating mt-3">
+                                    <input id="input__username" class="floating__input transport-input" name="username" type="text" placeholder="Address" />
+                                    <label for="input__username" class="floating__label text-left pl-0" data-content="Address">
+                                    <span class="hidden--visually">
+                                      Address</span></label>
+                                  </div>
+                                  <div class="mb-4 mt-3 text-left">
+                                    <label for="comment" class="apply-label detail-text">Description:</label>
+                                    <div id="toolbar-container"></div>
+                                    <div id="editor">
+                                        <p>Type Description...</p>
+                                    </div>
+                                    <!-- cdk Editor for form -->
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                  <button class="apply-bus "><a href="/studentsPortal/transport-apply.html">Send</a></button>
+                                </div>
+
+
+                                  <div class="d-flex justify-content-end">
+                                    <button class="apply-bus mt-4"><a href="/studentsPortal/transport-apply.html">Apply Now</a></button>
+                                  </div>
+
+                            </form>
                             </div>
                         </div>
-                        <div class="row mt-3">
-                            <hr class="dashboard__assignment-line mb-3">
-                            <div class="col-lg-6 col-md-6">
-                                <label for="" class="main-text">Class</label>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <label for="" class="main-text clr-blue">Computer Science</label>
-                            </div>
-                        </div>
+                       
                         
-                        <div class="row mt-2">
-                            <div class="col-lg-6 col-md-6">
-                                <label for="" class="main-text">Session</label>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <label for="" class="main-text clr-blue">2018-2022</label>
-                            </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-lg-6 col-md-6">
-                                <label for="" class="main-text">Registration Number</label>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <label for="" class="main-text clr-blue">FID075935</label>
-                            </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-lg-6 col-md-6">
-                                <label for="" class="main-text">Father Name</label>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <label for="" class="main-text clr-blue">Mushtaq Ahmad</label>
-                            </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-lg-6 col-md-6">
-                                <label for="" class="main-text">CNIC</label>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <label for="" class="main-text clr-blue">38301_____</label>
-                            </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-lg-6 col-md-6">
-                                <label for="" class="main-text">Blood Group</label>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <label for="" class="main-text clr-blue">O++</label>
-                            </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-lg-6 col-md-6">
-                                <label for="" class="main-text">Address</label>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <label for="" class="main-text clr-blue">Mianwali,Pakistan</label>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -708,6 +673,7 @@
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="../bootstrap-4.6.1/js/bootstrap.min.js"></script>
+  <script src="../js/students/editor.js"></script>
   <script>
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
