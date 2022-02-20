@@ -337,7 +337,8 @@ tr:hover {
       font-size: 28px; } }
 
 .dashboard__assignment {
-  margin-top: 20px; }
+  margin-top: 20px;
+  cursor: pointer; }
   .dashboard__assignment-heading {
     display: flex;
     justify-content: space-between;
@@ -355,6 +356,7 @@ tr:hover {
     background-color: #EFF4FA;
     margin: 0px; }
   .dashboard__assignment-card {
+    cursor: pointer;
     text-decoration: none;
     background-color: #F7F8FC;
     border-radius: 10px;
@@ -366,7 +368,8 @@ tr:hover {
     border: 2px solid #dddd; }
     .dashboard__assignment-card:hover {
       border: 2px solid #cccc;
-      text-decoration: none; }
+      text-decoration: none;
+      cursor: pointer !important; }
     .dashboard__assignment-card-heading {
       font-size: 16px;
       font-weight: 600;
