@@ -188,6 +188,16 @@ display: flex !important;
   &:hover{
    text-decoration: none;
   }
+
+  @media only screen and(max-width:767px){
+    padding:5px 10px !important;
+    font-size: 14px !important; 
+    }
+}
+.challan-row{
+  @media only screen and(max-width:500px){
+   flex-direction: column;
+    }
 }
 // .generate-challan{
 //     display: none;

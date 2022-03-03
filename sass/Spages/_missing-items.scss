@@ -1,9 +1,10 @@
-.missing-img{
+.missing-img {
     height: 200px;
     width: 100%;
     border-radius: 7px;
     overflow: hidden;
-    img{
+
+    img {
         background-position: center;
         background-repeat: no-repeat;
         object-fit: contain;
@@ -13,13 +14,15 @@
         border-radius: 7px;
     }
 }
-.all-comments{
+
+.all-comments {
     min-height: 300px;
     height: 300px;
     overflow-y: scroll;
     padding: 10px;
     border: 1px solid $gray-light2;
     border-radius: 7px;
+
     /* width */
     &::-webkit-scrollbar {
         width: 10px;
@@ -41,61 +44,88 @@
         background: $gray-light2;
     }
 }
-.comments__list{
+
+.comments__list {
     list-style: none;
-    li{
+
+    li {
         border-bottom: 1px solid $gray-light2;
         padding: 7px 0px;
-        &:hover{
+
+        &:hover {
             background-color: rgba(0, 123, 255, 0.466) !important;
         }
-      a{
-          display: flex;
-          align-items: flex-start;
-          text-decoration: none;
-        .comments__list-img {
-            height: 100px;
-            width: 100px;
-            backface-visibility: none;
-            margin: 0px 10px 0px 5px;
-            overflow: hidden;
-            border-radius: 100%;
 
-            img {
-                width: 100px;
-                height: auto;
+        a {
+            display: flex;
+            align-items: flex-start;
+            text-decoration: none;
+
+            .comments__list-img {
+                height: 60px;
+                width: 60px;
+                backface-visibility: none;
+                margin: 0px 10px 0px 5px;
+                overflow: hidden;
                 border-radius: 100%;
-                
-            }
-        }
-        .comments__list-text{
 
-            p {
-                font-size: 18px;
-                color: black;
-            }
-            .seen{
-              font-weight: 400 !important;
-              font-size: 17px !important;
-            }
-            .name-time1{
-                display: flex;
-                span{
-                    color: $primary-light;
-                    font-size: 16px;
-                    font-weight: 600 ;
+                @media only screen and(max-width:991px) {
+                    height: 40px;
+                    width: 40px;
+                }
+
+                img {
+                    width: auto;
+                    height: 60px;
+                    border-radius: 100%;
+
+                    @media only screen and(max-width:991px) {
+                        height: 40px;
+                        width: 40px;
+                    }
                 }
             }
-            .name-time{
-                display: flex;
-                span{
+
+            .comments__list-text {
+                width: 100%;
+                @media only screen and(max-width:991px) {
+                    width: 90%;
+                }
+                p {
+                    font-size: 18px;
                     color: black;
-                    font-size: 14px;
-                    font-weight: 500;
+                }
+
+                .seen {
+                    font-weight: 400 !important;
+                    font-size: 17px !important;
+
+                    @media only screen and(max-width:767px) {
+                        font-size: 14px !important;
+                    }
+                }
+
+                .name-time1 {
+                    display: flex;
+
+                    span {
+                        color: $primary-light;
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                }
+
+                .name-time {
+                    display: flex;
+
+                    span {
+                        color: black;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
                 }
             }
         }
-      }
     }
-    
+
 }

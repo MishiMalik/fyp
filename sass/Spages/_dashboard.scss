@@ -117,6 +117,12 @@
             align-items: center;
             padding: 10px !important;
             border: 2px solid $gray-dark2;
+            min-height: 180px;
+          
+            .no-assignment{
+                height: 140px;
+                width: auto;
+            }
             &:hover{
                 border:2px solid $gray-dark ;
                 text-decoration: none;

@@ -215,9 +215,14 @@
         }
     }
 
+   .missing-icon{
+       width: 20px !important;
+       font-weight: 700 !important;
+       font-weight: bold;
+       stroke-width:25px !important;
+   }
 
-
-
+ 
 
     /* width */
     &::-webkit-scrollbar {
@@ -418,4 +423,8 @@
            
         }
     }
+}
+
+.notification__icons-icon .i1 {
+    stroke-width: 3.5px !important;
 }

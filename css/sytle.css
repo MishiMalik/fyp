@@ -14,6 +14,9 @@
 .secondary-heading {
   font-size: 21px;
   font-weight: 500 !important; }
+  @media screen and (min-width: 1600px) {
+    .secondary-heading {
+      font-size: 25px !important; } }
   @media screen and (max-width: 1024px) {
     .secondary-heading {
       font-size: 20px !important; } }
@@ -25,10 +28,11 @@
       font-size: 20px !important; } }
   @media screen and (max-width: 375px) {
     .secondary-heading {
-      font-size: 18px !important; } }
-  @media screen and (min-width: 1600px) {
-    .secondary-heading {
-      font-size: 25px !important; } }
+      font-size: 17px !important;
+      font-weight: 600 !important; } }
+
+.secondary-heading2 {
+  margin: 10px; }
 
 .tertiary-heading {
   font-size: 18px;
@@ -365,7 +369,11 @@ tr:hover {
     justify-content: center;
     align-items: center;
     padding: 10px !important;
-    border: 2px solid #dddd; }
+    border: 2px solid #dddd;
+    min-height: 180px; }
+    .dashboard__assignment-card .no-assignment {
+      height: 140px;
+      width: auto; }
     .dashboard__assignment-card:hover {
       border: 2px solid #cccc;
       text-decoration: none;
@@ -720,6 +728,9 @@ tr:hover {
   border-radius: 10px;
   padding: 20px 40px;
   min-height: 82vh; }
+  @media only screen and (max-width: 767px) {
+    .profile__card {
+      padding: 20px !important; } }
   .profile__card .personal__picture {
     overflow: hidden;
     object-fit: cover;
@@ -756,6 +767,10 @@ tr:hover {
     .porder2 {
       order: 1; } }
 
+@media only screen and (max-width: 991px) {
+  .profile-card2 {
+    padding: 10px 5px !important; } }
+
 .enrollments-header {
   display: flex;
   justify-content: space-between;
@@ -782,6 +797,13 @@ tr:hover {
 
 #example_filter input {
   margin-right: 17px !important; }
+
+.table-data table {
+  overflow: scroll; }
+  @media only screen and (max-width: 767px) {
+    .table-data table {
+      width: 730px !important;
+      overflow-x: scroll !important; } }
 
 .dropzone {
   border-radius: 4px !important;
@@ -927,7 +949,12 @@ tr:hover {
     background-color: #0052CC;
     padding: 10px 20px;
     border-radius: 4px !important;
-    text-decoration: none; }
+    text-decoration: none;
+    white-space: nowrap; }
+    @media only screen and (max-width: 767px) {
+      .apply-bus a {
+        padding: 10px !important;
+        font-size: 14px !important; } }
 
 .apply-label {
   font-size: 14px !important;
@@ -1177,6 +1204,14 @@ tr:hover {
   text-decoration: none; }
   .pay-btn:hover {
     text-decoration: none; }
+  @media only screen and (max-width: 767px) {
+    .pay-btn {
+      padding: 5px 10px !important;
+      font-size: 14px !important; } }
+
+@media only screen and (max-width: 500px) {
+  .challan-row {
+    flex-direction: column; } }
 
 .complaint-table thead tr {
   border: 1px solid #0052CC; }
@@ -1262,12 +1297,25 @@ tr:hover {
         margin: 0px 10px 0px 5px;
         overflow: hidden;
         border-radius: 100%; }
+        @media only screen and (max-width: 500px) {
+          .notifications__list li a .notifications__list-img {
+            height: 40px;
+            width: 40px; } }
         .notifications__list li a .notifications__list-img img {
           width: 60px;
           height: auto;
           border-radius: 100%; }
+          @media only screen and (max-width: 500px) {
+            .notifications__list li a .notifications__list-img img {
+              width: 40px; } }
       .notifications__list li a .notifications__list-text {
         width: 90%; }
+        @media only screen and (max-width: 991px) {
+          .notifications__list li a .notifications__list-text {
+            width: 80%; } }
+        @media only screen and (max-width: 500px) {
+          .notifications__list li a .notifications__list-text {
+            width: 82%; } }
         .notifications__list li a .notifications__list-text p {
           white-space: nowrap;
           width: 90%;
@@ -1276,15 +1324,24 @@ tr:hover {
           font-size: 18px;
           font-weight: 500;
           color: black; }
+          @media only screen and (max-width: 500px) {
+            .notifications__list li a .notifications__list-text p {
+              font-size: 14px; } }
         .notifications__list li a .notifications__list-text .seen {
           font-weight: 400 !important;
           font-size: 17px !important; }
+          @media only screen and (max-width: 500px) {
+            .notifications__list li a .notifications__list-text .seen {
+              font-size: 14px !important; } }
         .notifications__list li a .notifications__list-text .name-time1 {
           display: flex; }
           .notifications__list li a .notifications__list-text .name-time1 span {
             color: #0052CC;
             font-size: 16px;
             font-weight: 600; }
+            @media only screen and (max-width: 500px) {
+              .notifications__list li a .notifications__list-text .name-time1 span {
+                font-size: 14px; } }
         .notifications__list li a .notifications__list-text .name-time {
           display: flex; }
           .notifications__list li a .notifications__list-text .name-time span {
@@ -1339,34 +1396,50 @@ tr:hover {
       align-items: flex-start;
       text-decoration: none; }
       .comments__list li a .comments__list-img {
-        height: 100px;
-        width: 100px;
+        height: 60px;
+        width: 60px;
         backface-visibility: none;
         margin: 0px 10px 0px 5px;
         overflow: hidden;
         border-radius: 100%; }
+        @media only screen and (max-width: 991px) {
+          .comments__list li a .comments__list-img {
+            height: 40px;
+            width: 40px; } }
         .comments__list li a .comments__list-img img {
-          width: 100px;
-          height: auto;
+          width: auto;
+          height: 60px;
           border-radius: 100%; }
-      .comments__list li a .comments__list-text p {
-        font-size: 18px;
-        color: black; }
-      .comments__list li a .comments__list-text .seen {
-        font-weight: 400 !important;
-        font-size: 17px !important; }
-      .comments__list li a .comments__list-text .name-time1 {
-        display: flex; }
-        .comments__list li a .comments__list-text .name-time1 span {
-          color: #0052CC;
-          font-size: 16px;
-          font-weight: 600; }
-      .comments__list li a .comments__list-text .name-time {
-        display: flex; }
-        .comments__list li a .comments__list-text .name-time span {
-          color: black;
-          font-size: 14px;
-          font-weight: 500; }
+          @media only screen and (max-width: 991px) {
+            .comments__list li a .comments__list-img img {
+              height: 40px;
+              width: 40px; } }
+      .comments__list li a .comments__list-text {
+        width: 100%; }
+        @media only screen and (max-width: 991px) {
+          .comments__list li a .comments__list-text {
+            width: 90%; } }
+        .comments__list li a .comments__list-text p {
+          font-size: 18px;
+          color: black; }
+        .comments__list li a .comments__list-text .seen {
+          font-weight: 400 !important;
+          font-size: 17px !important; }
+          @media only screen and (max-width: 767px) {
+            .comments__list li a .comments__list-text .seen {
+              font-size: 14px !important; } }
+        .comments__list li a .comments__list-text .name-time1 {
+          display: flex; }
+          .comments__list li a .comments__list-text .name-time1 span {
+            color: #0052CC;
+            font-size: 16px;
+            font-weight: 600; }
+        .comments__list li a .comments__list-text .name-time {
+          display: flex; }
+          .comments__list li a .comments__list-text .name-time span {
+            color: black;
+            font-size: 14px;
+            font-weight: 500; }
 
 .main-section__header {
   padding: 20px 25px;
@@ -1890,6 +1963,11 @@ tr:hover {
       @media screen and (min-width: 1600px) {
         .left-sidebar .progress-div .progress {
           height: 12px !important; } }
+  .left-sidebar .missing-icon {
+    width: 20px !important;
+    font-weight: 700 !important;
+    font-weight: bold;
+    stroke-width: 25px !important; }
   .left-sidebar::-webkit-scrollbar {
     width: 10px; }
   .left-sidebar::-webkit-scrollbar-track {
@@ -2039,6 +2117,9 @@ tr:hover {
       height: 100%;
       width: 100%;
       border-radius: 100%; }
+
+.notification__icons-icon .i1 {
+  stroke-width: 3.5px !important; }
 
 .right-sidebar {
   padding: 15px 0px !important;

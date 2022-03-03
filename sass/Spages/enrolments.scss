@@ -34,3 +34,12 @@
 #example_filter input{
     margin-right: 17px !important;
 }
+
+
+.table-data table{
+    overflow: scroll;
+    @media only screen and (max-width:767px){
+        width: 730px !important;
+        overflow-x: scroll !important;
+    }
+}

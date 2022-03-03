@@ -4,6 +4,10 @@
     border-radius: 10px;
     padding: 20px 40px;
     min-height: 82vh;
+
+    @media only screen and(max-width:767px){
+        padding: 20px !important;
+    }
     .personal__picture{
      overflow: hidden;
      object-fit: cover;
@@ -49,4 +53,13 @@
         order: 1;
       
     }
+}
+
+
+.profile-card2{
+    @media only screen and(max-width:991px) {
+        padding:10px 5px !important;
+      
+    }
+   
 }

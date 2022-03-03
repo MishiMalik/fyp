@@ -21,17 +21,30 @@
             margin: 0px 10px 0px 5px;
             overflow: hidden;
             border-radius: 100%;
+            @media only screen and(max-width:500px){
+                height: 40px;
+            width: 40px;
+            }
 
             img {
                 width: 60px;
                 height: auto;
                 border-radius: 100%;
+                @media only screen and(max-width:500px){
+                width: 40px;
+                }
                 
             }
         }
         .notifications__list-text{
             width: 90%;
+            @media only screen and(max-width:991px){
+                width: 80%;
+            }
 
+            @media only screen and(max-width:500px){
+                width: 82%;
+            }
             p {
                 white-space: nowrap;
                 width: 90%;
@@ -40,10 +53,17 @@
                 font-size: 18px;
                 font-weight: 500;
                 color: black;
+
+                @media only screen and(max-width:500px){
+                    font-size: 14px;
+                    }
             }
             .seen{
               font-weight: 400 !important;
               font-size: 17px !important;
+              @media only screen and(max-width:500px){
+                font-size: 14px !important;
+                }
             }
             .name-time1{
                 display: flex;
@@ -51,6 +71,9 @@
                     color: $primary-light;
                     font-size: 16px;
                     font-weight: 600 ;
+                    @media only screen and(max-width:500px){
+                        font-size: 14px;
+                        }
                 }
             }
             .name-time{
