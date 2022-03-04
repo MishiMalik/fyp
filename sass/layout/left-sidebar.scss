@@ -9,7 +9,7 @@
     z-index: 111;
     transition: all .5s;
     overflow-x: hidden;
-    height: 100vh;
+    height: 100%;
     flex: 0 0 auto;
 
     @media screen and (max-width: 767px) {
@@ -85,6 +85,8 @@
         list-style: none !important;
         text-decoration: none;
         margin-top: 20px !important;
+
+        
 
         .active{
             box-shadow:inset 8px 8px 160px 80px  rgba(0, 0, 0, 0.17),

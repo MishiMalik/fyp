@@ -371,9 +371,6 @@ tr:hover {
     padding: 10px !important;
     border: 2px solid #dddd;
     min-height: 180px; }
-    .dashboard__assignment-card .no-assignment {
-      height: 140px;
-      width: auto; }
     .dashboard__assignment-card:hover {
       border: 2px solid #cccc;
       text-decoration: none;
@@ -579,6 +576,14 @@ tr:hover {
 @media screen and (max-width: 375px) {
   .text {
     text-align: center; } }
+
+.no-assignment {
+  height: 140px;
+  width: auto; }
+
+.no-assignment2 {
+  height: 340px;
+  width: auto; }
 
 .sign__section {
   padding: 20px 50px;
@@ -1804,7 +1809,7 @@ tr:hover {
   z-index: 111;
   transition: all .5s;
   overflow-x: hidden;
-  height: 100vh;
+  height: 100%;
   flex: 0 0 auto;
   /* width */
   /* Track */

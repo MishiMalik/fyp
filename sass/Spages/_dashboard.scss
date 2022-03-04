@@ -119,10 +119,7 @@
             border: 2px solid $gray-dark2;
             min-height: 180px;
           
-            .no-assignment{
-                height: 140px;
-                width: auto;
-            }
+            
             &:hover{
                 border:2px solid $gray-dark ;
                 text-decoration: none;
@@ -373,3 +370,12 @@
     }
 }
 
+.no-assignment{
+    height: 140px;
+    width: auto;
+}
+
+.no-assignment2{
+    height: 340px;
+    width: auto;
+}
