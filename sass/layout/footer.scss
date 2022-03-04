@@ -1,0 +1,34 @@
+.footer{
+    margin-left: 18.1%;
+    background-color: $primary-light;
+    padding: 20px 0px;
+    width: 100%;
+
+    ul{
+        padding: 0px !important;
+        list-style: none;
+        li{
+            &:first-child{
+                font-weight: 600;
+                font-size: 23px;
+                color: white;
+            }
+            &:not(:first-child){
+                font-size: 16px;
+                color: white;
+            }
+        }
+    }
+
+    .map{
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+}
+.footer-line{
+    width: 85%;
+    background-color: white;
+    height: .6px;
+
+}
