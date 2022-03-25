@@ -41,6 +41,9 @@ tr{
 .title{
     width: 50% !important;
 }
+.title2{
+    width: 40% !important;
+}
 .ch{
     width: 15% !important;
 }
@@ -105,4 +108,50 @@ tr{
     //    min-width: 600px !important;
        overflow-x: scroll;
    }
+}
+.table-data-attendence{
+    overflow-y: scroll;
+}
+.table-striped{
+    border: 1px solid $gray-light !important;
+   
+}
+
+
+
+// admin-side
+.admin-table{
+    .dataTables_length{display: block !important;}
+    .pagination{
+        display: flex !important;
+    }
+    .dataTables_info{
+        display: block !important;
+    }
+    tr{
+        &:hover{
+            cursor: pointer;
+            background-color: rgba(0, 123, 255, 0.287) !important;
+        }
+    }
+    .thead{
+        background-color: $primary-light !important;
+        color: white !important;
+        th{
+            font-size: 16px !important;
+            font-weight: 500 !important;
+            @media only screen and(max-width:1150px){
+              font-size: 14px !important;
+           }
+           @media only screen and(max-width:767px){
+               font-size: 14px !important;
+               padding: 15px !important;
+            }
+           
+        }
+        &:hover{
+          background-color: $primary-light !important;
+      }
+      
+  }
 }

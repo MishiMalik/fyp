@@ -376,7 +376,12 @@
                     text-overflow: ellipsis;
                     font-size: 14px;
                     font-weight: 500;
+                    color: $primary-light;
+
+                }
+                .seen{
                     color: black;
+                    font-weight: 400 !important;
                 }
                 .name-time{
                     display: flex;
@@ -429,7 +434,7 @@
         align-items: center;
         width: 100%;
         padding: 0px 0px;
-
+        
         @media screen and (max-width: 991px) {
             padding: 0px !important;
         }
@@ -438,8 +443,8 @@
             text-align: center;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-start;
+            justify-content:center;
 
             h3 {
                 font-size: 16px;
@@ -451,7 +456,7 @@
                 font-size: 12px;
                 font-weight: 500;
                 color: $gray-light2;
-
+              white-space: nowrap;
             }
         }
 
@@ -461,12 +466,12 @@
             border: 2px solid $gray-light2;
             border-radius: 100%;
             margin: 0px 8px;
-
+            object-fit: contain;
             img {
                 height: 100%;
                 width: 100%;
                 border-radius: 100%;
-
+                object-fit: contain;
             }
         }
     }

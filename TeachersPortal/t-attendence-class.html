@@ -12,22 +12,27 @@
     <link rel="stylesheet" href="/bootstrap-4.6.1/css/bootstrap-grid.min.css" >
     <link rel="stylesheet" href="/bootstrap-4.6.1/css/bootstrap-grid.css" > -->
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
-     <link rel="stylesheet" href=" https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap4.min.css">
- 
+    <link rel="stylesheet" href=" https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap4.min.css">
+
   <!-- ==font awsome== -->
   <link href="../fontawesome-free-5.15.4/css/all.css" rel="stylesheet">
 
   <!--  ==style.css== -->
   <link rel="stylesheet" href="../css/sytle.css">
 
+  <!-- cdk Editor -->
+  <script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/decoupled-document/ckeditor.js"></script>
+
+
   <!-- ==fonts== -->
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/jpg" href="../images/logo.png"/>
-    
-  <title>Student Portal-Results</title>
+
+      <!-- Favicon -->
+  <link rel="shortcut icon" type="image/jpg" href="../images/logo.png"/>
+  
+  <title>Student Portal-UMW</title>
 </head>
 
 <body id="body">
@@ -110,7 +115,8 @@
             </div>
 
             <div class="notification__icons-icon" data-toggle="tooltip" data-placement="bottom" title="Complaints">
-              <?xml version="1.0" encoding="utf-8"?><svg class="i2" version="1.1" id="Layer_1"
+              <a href="index.html">
+               <svg class="i2" version="1.1" id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 122.88 114.18" style="enable-background:new 0 0 122.88 114.18" xml:space="preserve">
                 <g>
@@ -118,6 +124,7 @@
                     d="M94.78,0.04c-1.89-0.2-3.57,0.29-5.06,1.48c-1.48,1.19-2.3,2.73-2.5,4.63l-1.57,14.89c-0.2,1.9,0.29,3.59,1.48,5.06 c1.19,1.47,2.73,2.3,4.63,2.5l5.62,0.59c-0.55,1.47-1.19,2.85-1.93,4.13c-0.73,1.3-1.88,2.49-3.4,3.58 c2.74-0.41,5.22-1.2,7.47-2.35c2.23-1.14,4.22-2.65,5.92-4.5l6.24,0.66c1.89,0.2,3.57-0.31,5.06-1.48c1.48-1.19,2.3-2.73,2.5-4.63 l1.57-14.89c0.2-1.89-0.29-3.57-1.48-5.06c-1.19-1.48-2.73-2.3-4.63-2.5L94.78,0.04L94.78,0.04L94.78,0.04z M40.19,56.95 c13.2-3.19,27.52-3.67,43.55,0c1.31,0.3,2.67,0.99,3.35,2.04c0.28,0.3,0.54,0.63,0.75,0.99l9.88,13.81l6.05-16.57 c0.58-1.65,1.33-2.73,2.36-3.23l0-0.02l6.75-5.05c0.72-0.54,1.75-0.39,2.29,0.33v0c0.54,0.72,0.39,1.75-0.33,2.29l-3.94,2.95 c0.35,0.14,0.71,0.29,1.07,0.46l4.31-2.82c0.58-0.38,1.37-0.22,1.75,0.37l0,0c0.38,0.58,0.22,1.37-0.36,1.75l-2.21,1.44h5.63 c0.99,0,1.8,0.81,1.8,1.8l0,0c0,0.99-0.81,1.8-1.8,1.8h-4.88c-0.1,0.64-0.6,1.47-0.8,2.04l-10.49,30.23l-0.01,0 c-0.47,1.32-1.39,2.5-2.69,3.26c-2.93,1.72-6.7,0.74-8.42-2.2L84.36,78.1l-4.65,25.56c-1.03,5.67-4.43,10.51-9.84,10.51H54.06 c-5.41,0-8.81-4.84-9.85-10.51l-4.88-26.81L29.09,92.62c-1.72,2.93-5.49,3.92-8.42,2.2c-1.31-0.77-2.22-1.94-2.69-3.26l-0.01,0 L7.48,61.33c-0.2-0.57-0.69-1.4-0.8-2.04H1.8c-0.99,0-1.8-0.81-1.8-1.8l0,0c0-0.99,0.81-1.8,1.8-1.8h5.63l-2.21-1.44 c-0.58-0.38-0.74-1.17-0.36-1.75l0,0c0.38-0.58,1.17-0.74,1.75-0.37l4.31,2.82c0.36-0.16,0.71-0.32,1.07-0.46l-3.94-2.95 C7.33,51,7.18,49.97,7.72,49.26v0c0.54-0.72,1.57-0.87,2.29-0.33l6.75,5.05l0,0.02c1.03,0.5,1.78,1.58,2.36,3.23l6.05,16.57 l9.88-13.81c1.03-1.75,3-2.81,5.05-3.01L40.19,56.95L40.19,56.95z M61.09,10.08c11.17,0,20.22,9.05,20.22,20.22 c0,11.17-9.05,20.22-20.22,20.22c-11.17,0-20.22-9.05-20.22-20.22C40.87,19.14,49.92,10.08,61.09,10.08L61.09,10.08z M100.8,19.72 l3.25,0.52l-0.46,2.87l-3.25-0.52L100.8,19.72L100.8,19.72z M104.3,18.67l-3.24-0.52c0.31-3.99-0.01-6.28,0.63-10.22 c0.23-1.45,1.6-2.44,3.05-2.2c1.45,0.24,2.44,1.6,2.21,3.05C106.3,12.71,105.26,14.79,104.3,18.67L104.3,18.67z" />
                 </g>
               </svg>
+              </a>
             </div>
 
             <div class="notification__icons-icon " data-toggle="tooltip" data-placement="bottom" title="Announcement">
@@ -155,7 +162,7 @@
 
 
         <ul class="left__list p-0 m-0 ">
-          <li class="left__list-item  "><a href="index.html">
+          <li class="left__list-item  "><a href="t-index.html">
               <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                 <path
                   d="M16 2.59375L15.28125 3.28125L2.28125 16.28125L3.71875 17.71875L5 16.4375L5 28L14 28L14 18L18 18L18 28L27 28L27 16.4375L28.28125 17.71875L29.71875 16.28125L16.71875 3.28125 Z M 16 5.4375L25 14.4375L25 26L20 26L20 16L12 16L12 26L7 26L7 14.4375Z"
@@ -163,7 +170,7 @@
               </svg>
               Home</a></li>
 
-          <li class="left__list-item      "><a href="profile.html">
+          <li class="left__list-item     "><a href="t-profile.html">
 
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                 <path
@@ -172,14 +179,14 @@
               </svg>
               Profile</a></li>
 
-          <li class="left__list-item"><a href="enrollments.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+          <li class="left__list-item"><a href="t-enrollments.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                 <path
                   d="M10.5 5C8.0324991 5 6 7.0324991 6 9.5L6 31.5C6 33.967501 8.0324991 36 10.5 36L15.994141 36L15.994141 33L10.5 33C9.6535009 33 9 32.346499 9 31.5L9 31L16 31L16 28L9 28L9 9.5C9 8.6535009 9.6535009 8 10.5 8L25.5 8C26.346499 8 27 8.6535009 27 9.5L27 10L30 10L30 9.5C30 7.0324991 27.967501 5 25.5 5L10.5 5 z M 22.5 12C20.032499 12 18 14.032499 18 16.5L18 36.253906 A 1.50015 1.50015 0 0 0 18 36.740234L18 38.5C18 40.967501 20.032499 43 22.5 43L40.5 43 A 1.50015 1.50015 0 1 0 40.5 40L22.5 40C21.653501 40 21 39.346499 21 38.5L21 38L40.5 38 A 1.50015 1.50015 0 0 0 42 36.5L42 16.5C42 14.032499 39.967501 12 37.5 12L22.5 12 z M 13.5 13C12.671 13 12 13.671 12 14.5C12 15.329 12.671 16 13.5 16L16.025391 16C16.110391 14.901 16.46625 13.879 17.03125 13L13.5 13 z M 22.5 15L37.5 15C38.346499 15 39 15.653501 39 16.5L39 35L21 35L21 16.5C21 15.653501 21.653501 15 22.5 15 z M 25.5 20 A 1.50015 1.50015 0 1 0 25.5 23L34.5 23 A 1.50015 1.50015 0 1 0 34.5 20L25.5 20 z"
                   fill="#EFF4F9" />
               </svg>Enrollments</a>
           </li>
 
-          <li class="left__list-item"><a href="assignments.html">
+          <li class="left__list-item"><a href="t-assignments.html">
 
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
                 <path
@@ -188,7 +195,7 @@
               </svg>Assignments</a>
           </li>
 
-          <li class="left__list-item"><a href="attendence.html">
+          <li class="left__list-item active"><a href="t-attendence.html">
 
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                 <path
@@ -197,7 +204,7 @@
               </svg>Attendence</a>
           </li>
 
-          <li class="left__list-item active "><a href="results.html">
+          <li class="left__list-item "><a href="t-results.html">
 
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                 <path
@@ -205,8 +212,8 @@
                   fill="#EFF4F9" />
               </svg>
               Results</a></li>
-<!-- 
-          <li class="left__list-item"><a href="library.html">
+
+          <!-- <li class="left__list-item"><a href="library.html">
 
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                 <path
@@ -215,14 +222,14 @@
               </svg>
               Library</a></li> -->
 
-          <li class="left__list-item"><a href="transport.html">
+          <li class="left__list-item   "><a href="transport.html">
 
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                 <path
                   d="M9 4C6.800781 4 5 5.800781 5 8L5 13L3 13L3 16L5 16L5 27C5 27.550781 5.449219 28 6 28L9 28L9.34375 27L22.65625 27L23 28L26 28C26.550781 28 27 27.550781 27 27L27 16L29 16L29 13L27 13L27 8C27 5.800781 25.199219 4 23 4 Z M 9 6L23 6C24.117188 6 25 6.882813 25 8L7 8C7 6.882813 7.882813 6 9 6 Z M 7 10L15 10L15 17L7 17 Z M 17 10L25 10L25 17L17 17 Z M 7 19L25 19L25 25L7 25 Z M 8 21L8 23L12 23L12 21 Z M 20 21L20 23L24 23L24 21Z"
                   fill="#EFF4F9" />
               </svg>Transport</a></li>
-          
+
               <li class="left__list-item"><a href="missing-items.html">
 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -529,156 +536,337 @@
 
         <!-- ==================main-body================= -->
         <div class="container mt-3">
-            <div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center mb-5">
                 <div class="col-lg-11 profile__card enrollments">
-                   <div class="enrollments-header">
-                    <h2 class="secondary-heading">Results</h2>
-                    <div class="form-group enrollments-select-div">
-                        <select class="form-control enrollments-select" id="exampleFormControlSelect1">
-                          <option>Semester 1</option>
-                          <option>Semester 2</option>
-                          <option>Semester 3</option>
-                          <option>Semester 4</option>
-                          <option>Semester 5</option>
-                          <option>Semester 6</option>
-                          <option selected>Semester 7</option>
-                          <option disabled>Semester 8</option>
-                          <option>All Enrollments</option>
-                        </select>
-                      </div>
-                   </div>
-                   
-                   <h3 class="tertiary-heading mt-4">
-                       Semester 7 Results:
-                   </h3>
+                    <div class="enrollments-header align-items-center challan-row d-flex">
+                        <h2 class="secondary-heading mt-2">BSCS7/Attendence</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="floating mt-3">
+                                <input id="input__username" class="floating__input transport-input" name="username" type="date" placeholder="Date" />
+                                <label for="input__username" class="floating__label text-left pl-0" data-content="Date">
+                                <span class="hidden--visually">
+                                  Date</span></label>
+                              </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="floating mt-3">
+                                <input id="input__username" class="floating__input transport-input" name="username" type="text" placeholder="Day" />
+                                <label for="input__username" class="floating__label text-left pl-0" data-content="Day">
+                                <span class="hidden--visually">
+                                  Day</span></label>
+                              </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="floating mt-3">
+                                <input id="input__username" class="floating__input transport-input" name="username" type="text" placeholder="Lecture Number" />
+                                <label for="input__username" class="floating__label text-left pl-0" data-content="Lecture Number">
+                                <span class="hidden--visually">
+                                  Lecture Number</span></label>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                      <div class="col-lg-12">
+                        <h3 class="tertiary-heading mt-4">
+                          Students List
+                      </h3>
+                       <div class="table-data ">
+                        <table id="example" class="table table-striped table-bordered complaint-table" style="width:100%">
+                          <thead>
+                              <tr class="thead">
+                                  <th class="">S.No</th>
+                                  <th class="title">Name</th>
+                                  <th class="code">Roll Number</th>
+                                  <th class="code">Status</th>
+                                  
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td class="td">1</td>
+                                  <td class="td">Nimra Iqbal</td>
+                                  <td class="td">BSCSF18MM01</td>
+                                  <td class="td present" contenteditable="true">P</td>
+                              </tr>
+                              <tr>
+                                <td class="td" >2</td>
+                                <td class="td">Muhammad Amjid</td>
+                                <td class="td">BSCSF18MM02</td> 
+                                 <td class="td absent" contenteditable="true">A</td>
+                              </tr>
+                              <tr>
+                                <td class="td">3</td>
+                                <td class="td">Muhammad Ansar</td>
+                                <td class="td">BSCSF18MM03</td> 
+                                 <td class="td present" contenteditable="true">p</td>
+                              </tr>
+                              <tr>
+                                <td class="td">4</td>
+                                <td class="td">Fareeha Mumtaz</td>
+                                <td class="td">BSCSF18MM04</td> 
+                                 <td class="td present" contenteditable="true">p</td>
+                              </tr>
+                              <tr>
+                                <td class="td">5</td>
+                                <td class="td">backtawar Khan</td>
+                                <td class="td">BSCSF18MM09</td> 
+                                 <td class="td present" contenteditable="true">p</td>
+                              </tr>
+                              <tr>
+                                <td class="td">6</td>
+                                <td class="td">Muhammad Awais</td>
+                                <td class="td">BSCSF18MM013</td> 
+                                 <td class="td present" contenteditable="true">p</td>
+                              </tr>
+                              <tr>
+                                <td class="td">7</td>
+                                <td class="td">Muhammad Amie</td>
+                                <td class="td">BSCSF18MM014</td> 
+                                 <td class="td present" contenteditable="true">p</td>
+                              </tr>
+                              <tr>
+                                <td class="td">8</td>
+                                <td class="td">Malik Faisal</td>
+                                <td class="td">BSCSF18MM015</td> 
+                                 <td class="td present" contenteditable="true">p</td>
+                              </tr>
+                              <tr>
+                                <td class="td">9</td>
+                                <td class="td">Kainat Mehak</td>
+                                <td class="td">BSCSF18MM016</td> 
+                                 <td class="td absent" contenteditable="true">A</td>
+                              </tr>
+                              <tr>
+                                <td class="td">10</td>
+                                <td class="td">Fareeha Nosheen</td>
+                                <td class="td">BSCSF18MM017</td> 
+                                 <td class="td absent" contenteditable="true">A</td>
+                              </tr>
+                              <tr>
+                                <td class="td">11</td>
+                                <td class="td">Malik Faisal</td>
+                                <td class="td">BSCSF18MM015</td> 
+                                 <td class="td Present" contenteditable="true">p</td>
+                              </tr>
+                              <tr>
+                                <td class="td">12</td>
+                                <td class="td">Kainat Mehak</td>
+                                <td class="td">BSCSF18MM016</td> 
+                                 <td class="td present" contenteditable="true">A</td>
+                              </tr>
+                              <tr>
+                                <td class="td">13</td>
+                                <td class="td">Fareeha Nosheen</td>
+                                <td class="td">BSCSF18MM017</td> 
+                                 <td class="td present" contenteditable="true">A</td>
+                              </tr>
+                             
+                              <tr>
+                                <td class="td">1</td>
+                                <td class="td">Nimra Iqbal</td>
+                                <td class="td">BSCSF18MM01</td>
+                                <td class="td present" contenteditable="true">P</td>
+                            </tr>
+                            <tr>
+                              <td class="td">2</td>
+                              <td class="td">Muhammad Amjid</td>
+                              <td class="td">BSCSF18MM02</td> 
+                               <td class="td absent" contenteditable="true">A</td>
+                            </tr>
+                            <tr>
+                              <td class="td">3</td>
+                              <td class="td">Muhammad Ansar</td>
+                              <td class="td">BSCSF18MM03</td> 
+                               <td class="td present" contenteditable="true">p</td>
+                            </tr>
+                            <tr>
+                              <td class="td">4</td>
+                              <td class="td">Fareeha Mumtaz</td>
+                              <td class="td">BSCSF18MM04</td> 
+                               <td class="td present" contenteditable="true">p</td>
+                            </tr>
+                            <tr>
+                              <td class="td">5</td>
+                              <td class="td">backtawar Khan</td>
+                              <td class="td">BSCSF18MM09</td> 
+                               <td class="td present" contenteditable="true">p</td>
+                            </tr>
+                            <tr>
+                              <td class="td">6</td>
+                              <td class="td">Muhammad Awais</td>
+                              <td class="td">BSCSF18MM013</td> 
+                               <td class="td present" contenteditable="true">p</td>
+                            </tr>
+                            <tr>
+                              <td class="td">7</td>
+                              <td class="td">Muhammad Amie</td>
+                              <td class="td">BSCSF18MM014</td> 
+                               <td class="td present" contenteditable="true">p</td>
+                            </tr>
 
-                   <div class="row">
-                    <div class="col-lg-12">
-                     <div class="table-data">
-                        <table id="example" class="table table-striped table-bordered" style="width:100%">
-                            <thead>
-                                <tr class="thead">
-                                    <th class="code">Course Code</th>
-                                    <th class="title-R">Title</th>
-                                    <th class="ch">CR.hours</th>
-                                    <th class="marks">Marks</th>
-                                    <th class="gpa">GPA</th>
-                                    <th class="grades">Grades</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="td">Ch09745</td>
-                                    <td class="td">Theory of Automata</td>
-                                    <td class="td">4</td>
-                                    <td class="td">80</td>
-                                    <td class="td">3.7</td>
-                                    <td class="td">A</td>
-                                </tr>
-                                <tr>
-                                   <td class="td">Ch09748</td>
-                                   <td class="td">Enterprise Application Development</td>
-                                   <td class="td">4</td>
-                                   <td class="td">85</td>
-                                   <td class="td">4</td>
-                                   <td class="td">A+</td>
-                               </tr>
-                               <tr>
-                                   <td class="td">Ch00879</td>
-                                   <td class="td">Data Structure</td>
-                                   <td class="td">4</td>
-                                   <td class="td">80</td>
-                                   <td class="td">4</td>
-                                   <td class="td">A+</td>
-                               </tr>
-                               <tr>
-                                   <td class="td">Ch00879</td>
-                                   <td class="td">Database</td>
-                                   <td class="td">3</td>
-                                   <td class="td">75</td>
-                                   <td class="td">3.3</td>
-                                   <td class="td">B+</td>
-                               </tr>
-                               <tr>
-                                   <td class="td">Ch00879</td>
-                                   <td class="td">Islamiyat</td>
-                                   <td class="td">2</td>
-                                   <td class="td">80</td>
-                                   <td class="td">3.7</td>
-                                   <td class="td">A</td>
-                               </tr>
-                               <tr>
-                                   <td class="td">Ch00879</td>
-                                   <td class="td">Capstone Project</td>
-                                   <td class="td">6</td>
-                                   <td class="td">85</td>
-                                   <td class="td">4</td>
-                                   <td class="td">A+</td>
-                               </tr>
-                               <!-- <tr>
-                               
-                                   <td colspan="5" class="td text-right">
-                                       <h3 class="tertiary-heading pb-0 mb-0 dark">
-                                          SGPA
-                                       </h3>
-                                   </td>
-                                   <td class="td">
-                                       3.50
-                                   </td>
-                                   <td style="opacity: 0;"></td>
-                                   <td style="opacity: 0;"></td>
-                                   <td style="opacity: 0;"></td>
-                                   <td style="opacity: 0;"></td>
-                               </tr>
-                               <tr>
-                                   <td colspan="5" class="td text-right">
-                                       <h3 class="tertiary-heading pb-0 mb-0 dark">
-                                          CGPA
-                                       </h3>
-                                   </td>
-                                   <td class="td">
-                                       3.33
-                                   </td>
 
-                                   <td style="opacity: 0;"></td>
-                                   <td style="opacity: 0;"></td>
-                                   <td style="opacity: 0;"></td>
-                                   <td style="opacity: 0;"></td>
-                               </tr> -->
-   
-                            </tbody>
-                        </table>
-                     </div>
-
-                     <div class="row mt-3">
-                      <div class="col-lg-4 total-atendence-cel1 ">
-                          <p class="total-atendence">
-                              Credit Hours :
-                          </p>
-                          <p class="total-atendence-number ml-3">
-                              16
-                          </p>
-                      </div>
-                      <div class="col-lg-4 total-atendence-cel1">
-                          <p class="total-atendence">
-                              SGPA :
-                          </p>
-                          <p class="total-atendence-number ml-3">
-                              3.7
-                          </p>
-                      </div>
-                      <div class="col-lg-4 total-atendence-cel1">
-                          <p class="total-atendence">
-                              CGPA :
-                          </p>
-                          <p class="total-atendence-number ml-2">
-                              3.4
-                          </p>
+                            <tr>
+                                <td class="td">1</td>
+                                <td class="td">Nimra Iqbal</td>
+                                <td class="td">BSCSF18MM01</td>
+                                <td class="td present" contenteditable="true">P</td>
+                            </tr>
+                            <tr>
+                              <td class="td">2</td>
+                              <td class="td">Muhammad Amjid</td>
+                              <td class="td">BSCSF18MM02</td> 
+                               <td class="td absent" contenteditable="true">A</td>
+                            </tr>
+                            <tr>
+                              <td class="td">3</td>
+                              <td class="td">Muhammad Ansar</td>
+                              <td class="td">BSCSF18MM03</td> 
+                               <td class="td present" contenteditable="true">p</td>
+                            </tr>
+                            <tr>
+                              <td class="td">4</td>
+                              <td class="td">Fareeha Mumtaz</td>
+                              <td class="td">BSCSF18MM04</td> 
+                               <td class="td present" contenteditable="true">p</td>
+                            </tr>
+                            <tr>
+                              <td class="td">5</td>
+                              <td class="td">backtawar Khan</td>
+                              <td class="td">BSCSF18MM09</td> 
+                               <td class="td present" contenteditable="true">p</td>
+                            </tr>
+                            <tr>
+                              <td class="td">6</td>
+                              <td class="td">Muhammad Awais</td>
+                              <td class="td">BSCSF18MM013</td> 
+                               <td class="td present" contenteditable="true">p</td>
+                            </tr>
+                            <tr>
+                              <td class="td">7</td>
+                              <td class="td">Muhammad Amie</td>
+                              <td class="td">BSCSF18MM014</td> 
+                               <td class="td present" contenteditable="true">p</td>
+                            </tr>
+                            <tr>
+                              <td class="td">8</td>
+                              <td class="td">Malik Faisal</td>
+                              <td class="td">BSCSF18MM015</td> 
+                               <td class="td present" contenteditable="true">p</td>
+                            </tr>
+                            <tr>
+                              <td class="td">9</td>
+                              <td class="td">Kainat Mehak</td>
+                              <td class="td">BSCSF18MM016</td> 
+                               <td class="td absent" contenteditable="true">A</td>
+                            </tr>
+                            <tr>
+                              <td class="td">10</td>
+                              <td class="td">Fareeha Nosheen</td>
+                              <td class="td">BSCSF18MM017</td> 
+                               <td class="td absent" contenteditable="true">A</td>
+                            </tr>
+                            <tr>
+                              <td class="td">11</td>
+                              <td class="td">Malik Faisal</td>
+                              <td class="td">BSCSF18MM015</td> 
+                               <td class="td Present" contenteditable="true">p</td>
+                            </tr>
+                            <tr>
+                              <td class="td">12</td>
+                              <td class="td">Kainat Mehak</td>
+                              <td class="td">BSCSF18MM016</td> 
+                               <td class="td present" contenteditable="true">A</td>
+                            </tr>
+                            <tr>
+                              <td class="td">13</td>
+                              <td class="td">Fareeha Nosheen</td>
+                              <td class="td">BSCSF18MM017</td> 
+                               <td class="td present" contenteditable="true">A</td>
+                            </tr>
+                           
+                            <tr>
+                              <td class="td">1</td>
+                              <td class="td">Nimra Iqbal</td>
+                              <td class="td">BSCSF18MM01</td>
+                              <td class="td present" contenteditable="true">P</td>
+                          </tr>
+                          <tr>
+                            <td class="td">2</td>
+                            <td class="td">Muhammad Amjid</td>
+                            <td class="td">BSCSF18MM02</td> 
+                             <td class="td absent" contenteditable="true">A</td>
+                          </tr>
+                          <tr>
+                            <td class="td">3</td>
+                            <td class="td">Muhammad Ansar</td>
+                            <td class="td">BSCSF18MM03</td> 
+                             <td class="td present" contenteditable="true">p</td>
+                          </tr>
+                          <tr>
+                            <td class="td">4</td>
+                            <td class="td">Fareeha Mumtaz</td>
+                            <td class="td">BSCSF18MM04</td> 
+                             <td class="td present" contenteditable="true">p</td>
+                          </tr>
+                          <tr>
+                            <td class="td">5</td>
+                            <td class="td">backtawar Khan</td>
+                            <td class="td">BSCSF18MM09</td> 
+                             <td class="td present" contenteditable="true">p</td>
+                          </tr>
+                          <tr>
+                            <td class="td">6</td>
+                            <td class="td">Muhammad Awais</td>
+                            <td class="td">BSCSF18MM013</td> 
+                             <td class="td present" contenteditable="true">p</td>
+                          </tr>
+                          <tr>
+                            <td class="td">7</td>
+                            <td class="td">Muhammad Amie</td>
+                            <td class="td">BSCSF18MM014</td> 
+                             <td class="td present" contenteditable="true">p</td>
+                          </tr>
+                             
+                             
+                           
+                             
+                          </tbody>
+                      </table>
+                       </div> 
                       </div>
                   </div>
+                  
+                  <div class="row mt-3">
+                    <div class="col-lg-4 total-atendence-cel1">
+                        <p class="total-atendence">
+                            Presents:
+                        </p>
+                        <p class="total-atendence-number ml-3">
+                            45
+                        </p>
                     </div>
-                </div> 
+                    <div class="col-lg-4 total-atendence-cel2">
+                        <p class="total-atendence">
+                           Absents :
+                        </p>
+                        <p class="total-atendence-number ml-3">
+                            3
+                        </p>
+                    </div>
+                    <div class="col-lg-4 total-atendence-cel3">
+                        <p class="total-atendence">
+                          Percentage :
+                        </p>
+                        <p class="total-atendence-number ml-3">
+                            80%
+                        </p>
+                    </div>
                 </div>
+                   
+ 
+                 </div>
             </div>
          
         </div>
@@ -708,36 +896,8 @@
   <script src="../bootstrap-4.6.1/js/bootstrap.min.js"></script>
   <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
   <script src="  https://cdn.datatables.net/1.11.4/js/dataTables.bootstrap4.min.js"></script>
-  <script>
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
-
-    // Side-Bar//Filter Bar
-    function openNav() {
-      document.getElementById("left-sidebar").style.width = "240px ";
-      // document.getElementById("close").style.display = 'block';
-      document.getElementById("backdrop").style.display = 'block';
-      // document.getElementById("side-btn").style.width = "260px";
-      document.getElementById("body").style.overflowY = 'hidden';
-    }
-
-    function closeNav() {
-      document.getElementById("left-sidebar").style.width = "0";
-      // document.getElementById("close").style.display = 'none';
-      document.getElementById("backdrop").style.display = 'none';
-      // document.getElementById("side-btn").style.width = "0";
-      document.getElementById("body").style.overflowY = 'scroll';
-    }
-
-    $(document).ready(function() {
-    $('#example').DataTable();
-} );
-  </script>
-
-  <!-- https://code.jquery.com/jquery-3.5.1.js -->
-  <!-- https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js
-  https://cdn.datatables.net/1.11.4/js/dataTables.bootstrap4.min.js -->
+  <script src="../js/students/app.js"></script>
+ 
 </body>
 
 </html>

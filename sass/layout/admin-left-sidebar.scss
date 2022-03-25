@@ -1,0 +1,251 @@
+.admin-left-sidebar{
+    background-color:$white-light!important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.13);
+
+
+        /* width */
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+    
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: $white-light;
+        }
+    
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: $blue-light;
+            border-radius: 5px;
+        }
+    
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: $blue-light;
+        }
+
+
+        & .left__list {
+            list-style: none !important;
+            text-decoration: none;
+            margin-top: 10px !important;
+    
+            
+    
+            .active{
+                box-shadow:inset 8px 8px 160px 80px  rgba(0, 0, 0, 0.17),
+                           inset -8px -8px 15px rgba(0, 0, 0, 0.17);
+                background-color: #0359E0;
+                a{
+                    color: $white;
+                }
+                svg{
+                    fill: $white !important;
+                    stroke: $white !important;
+                    
+                }
+            }
+    
+            &-item {
+                text-decoration: none;
+                list-style: none;
+                margin: 6px 0px;
+                padding: 0px 0px;
+                border-radius: 7px;
+                backface-visibility: hidden;
+                
+                a {
+                    text-decoration: none;
+                    color: $primary;
+                    font-size: 16px;
+                    font-weight: 400;
+                    display: flex;
+                    flex-grow: 1;
+                    align-items: center;
+                    padding: 10px 0px 7px 0px;
+                    padding-right: 15px;
+                    white-space: nowrap !important;
+                    border-radius: 7px;
+                  
+                    // border-bottom: 3px solid $primary-light;
+                    @media screen and (max-width: 991px) {
+                        font-size: 14px;
+                        padding: 8px 0px 5px 0px;
+                        padding-right: 13px;
+                    }
+                    @media screen and (max-width: 820px) {
+                        font-size: 13px;
+                    }
+                    @media screen and (max-width: 767px) {
+                        font-size: 16px;
+                     }
+                     @media screen and (max-width: 375px) {
+                        font-size: 14px;
+                     }
+                     @media screen and (min-width:1600px) {
+                        font-size: 18px;
+                     }
+                  
+                    svg {
+                        margin-right: 14px;
+                        margin-left: 15px;
+                        height: 22px !important;
+                        width: 22px !important;
+                        font-weight: 700 !important;
+                       
+                        @media screen and (max-width: 991px) {
+                            height: 20px !important;
+                            width: 20px !important;
+                            margin-right: 12px;
+                        }
+                        @media screen and (max-width: 820px) {
+                            height: 18px !important;
+                            width: 18px !important;
+                        }
+                        @media screen and (max-width: 767px) {
+                            height: 22px !important;
+                            width: 22px !important;
+                         }
+                         @media screen and (max-width: 375px) {
+                            height: 20px !important;
+                            width: 20px !important;
+                         }
+                         @media screen and (min-width:1600px) {
+                            height: 22px !important;
+                            width: 22px !important;
+                         }
+                    }
+                    .announcement-icon{
+                       font-weight: 700;
+                        fill: #0359E0 !important;
+                    }
+                    
+                    &:hover {
+                        border-radius: 7px;
+                        backface-visibility: hidden;
+                        box-shadow:inset 8px 8px 160px 80px  rgba(0, 0, 0, 0.17),
+                        inset -8px -8px 15px rgba(0, 0, 0, 0.17);
+                         background-color: #0359E0;
+                            color: $white !important;
+                        svg{
+                            fill: $white !important;
+                            stroke: $white !important;
+                            
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+
+
+        .logo-label {
+            background-color: $white;
+            width: fit-content;
+            padding: 0px 0px;
+            border-radius: 5px;
+            border: 3px solid $primary-light;
+            padding: 7px;
+            @media screen and (max-width: 767px) {
+               display: none !important;
+            }
+           
+    
+            & .logo-img2 {
+                height: auto !important;
+                width: 90px !important;
+                background-color: $white;
+                margin: 2px 10px;
+    
+                @media screen and (max-width: 991px) {
+                    height: 33px;
+                    width: 33px;
+                    margin: 2px 8px;
+                }
+                @media screen and (max-width: 820px) {
+                    height: 30px;
+                    width: 30px;
+                    margin: 2px 7px;
+                }
+                @media screen and (min-width:1600px) {
+                    height: 38px;
+                    width: 38px;
+                    margin: 3px 8px;
+                 }
+            }
+    
+    
+        }
+}
+
+// Left Sidebar
+  
+  /* Add an active class to the active dropdown button */
+  .active-nav {
+    box-shadow:inset 8px 8px 160px 80px  rgba(0, 0, 0, 0.17),
+                           inset -8px -8px 15px rgba(0, 0, 0, 0.17);
+                background-color: #0359E0;
+                color: white !important;
+                a{
+                    color: $white;
+                }
+                svg{
+                    fill: $white !important;
+                    stroke: $white !important;
+                    
+                }
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-btn{
+      cursor: pointer !important;
+  }
+  .dropdown-container {
+    display: none;
+    background-color:#0052cc7e;
+    color: white;
+    margin-top: -3px;
+    position: relative;
+    z-index: 1;
+    border-radius: 0px 0px 7px 7px !important;
+    padding: 10px 20px;
+    cursor: pointer !important;
+    a{
+        color: white !important;
+        cursor: pointer !important;
+        position: relative;
+        z-index: 100;
+        border-bottom: 2px solid transparent !important;
+        &::before{
+            content: "";
+            height: 7px;
+            width: 7px;
+            border-radius: 100%;
+            background-color: $primary-light;
+            margin-right: 10px;
+        }
+        &:hover{
+            border-bottom: 2px solid $primary-light !important;
+            background-color: transparent !important;
+            box-shadow: none !important;
+            border-radius: 0px !important;
+        }
+    }
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    position: absolute;
+    right: 48px !important;
+    @media screen and (max-height:767px) {
+        right: 20px;
+      }
+  }
+  
+  /* Some media queries for responsiveness */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

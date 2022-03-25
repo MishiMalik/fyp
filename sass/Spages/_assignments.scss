@@ -71,3 +71,40 @@ font-weight: 500;
         }
     }
 }
+.download{
+    background-color: $primary-light;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+.download-disbaled{
+    background-color: $gray-light2;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+.assignment-download-row{
+    border-top: 2px solid $gray-light;
+    padding: 7px 20px !important;
+    &:last-child{
+        border-bottom: 2px solid $gray-light;
+    }
+    .d-text{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .d-btn{
+        .download-link{
+            font-size: 16px ;
+            color: $primary-light;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+}

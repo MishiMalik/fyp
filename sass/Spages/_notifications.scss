@@ -2,11 +2,13 @@
     list-style: none;
     border-top: 2px solid $gray-light2;
     li{
+
         border-top: 1px solid $gray-light2;
         padding: 7px 0px;
         &:last-child{
             border-bottom: 1px solid $gray-light2;
         }
+       
         &:hover{
             background-color: rgba(0, 123, 255, 0.466) !important;
         }

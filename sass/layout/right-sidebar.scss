@@ -47,6 +47,7 @@
             width: 50px;
             border: 2px solid $gray-light2;
             border-radius: 100%;
+            object-fit: contain;
             @media screen and (min-width:1600px) {
                 height: 56px;
                 width: 56px;
@@ -55,6 +56,7 @@
                 height: 100%;
                 width: 100%;
                 border-radius: 100%;
+                object-fit:contain;
            
             }
         }

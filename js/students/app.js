@@ -16,5 +16,17 @@ function closeNav() {
     // document.getElementById("close").style.display = 'none';
     document.getElementById("backdrop").style.display = 'none';
     // document.getElementById("side-btn").style.width = "0";
+   
     document.getElementById("body").style.overflowY = 'scroll';
 }
+
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+
+
+$(document).ready(function() {
+    $('#admin').DataTable({
+        "paging":   true,
+    });
+} );

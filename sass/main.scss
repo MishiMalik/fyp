@@ -22,7 +22,14 @@
 @import "Spages/missing-items";
 @import "Spages/announcement";
 
+// Admin Pages
+@import "Apages/dashboard";
+
+// student and Teachers Layout
 @import "layout/main-header.scss";
 @import "layout/left-sidebar.scss";
 @import "layout/right-sidebar.scss";
 @import "layout/footer";
+// Admin side Layout
+@import "layout/admin-left-sidebar";
+@import "layout/admin-main-header.scss";

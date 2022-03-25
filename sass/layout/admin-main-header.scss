@@ -1,0 +1,127 @@
+.admin-main-section{
+    .main-section__header {
+        padding: 10px 25px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        background-color: $white-light;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.13);
+        @media screen and (max-width: 767px) {
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+    
+        @media screen and (max-width: 1260px) {
+            justify-content: space-between;
+        }
+    
+    
+        & .search__input-admin {
+            position: relative;
+            width: 27vw;
+            display: flex;
+            justify-content: center;
+    
+            @media screen and (max-width: 1260px) {
+                width: unset;
+            }
+    
+            @media screen and (max-width: 767px) {
+                display: none;
+                width: unset;
+            }
+    
+            @media screen and (min-width:1600px) {
+                width: 18vw;
+            }
+    
+            & input {
+                background-color: $gray-light;
+                border: none;
+                border-radius: 10px;
+                z-index: 1;
+                padding: 5px 15px;
+                width: 22vw;
+                font-size: 14px;
+                transition: all 1s;
+    
+                @media screen and (max-width: 1260px) {
+                    width: 30vw;
+                    height: 33px !important;
+                }
+    
+                @media screen and (max-width: 1024) {
+                    width: unset;
+                }
+    
+                @media screen and (min-width:1600px) {
+                    width: 24vw;
+                    font-size: 16px;
+                }
+    
+                &:focus,
+                &:active {
+                    border: 0px solid white !important;
+                    box-shadow: none !important;
+                    outline: none !important;
+                    width: 25vw;
+    
+                    @media screen and (max-width: 1260px) {
+                        width: 32vw;
+                    }
+    
+                    @media screen and (min-width:1600px) {
+                        width: 27vw;
+                    }
+    
+                    &~.search-icon {
+                        right: 20px;
+                    }
+                }
+            }
+    
+            & .search-icon {
+                position: absolute;
+                top: 3px;
+                right: 45px;
+                z-index: 2;
+                height: 20px !important;
+                width: 20px !important;
+                transition: all 1s;
+    
+                @media screen and (max-width: 1260px) {
+                    right: 14px;
+                }
+    
+                @media screen and (min-width:1600px) {
+                    right: 20px;
+                }
+    
+                svg {
+                    fill: $yellow !important;
+                }
+            }
+        }
+    
+        .icons-lg {
+            @media screen and (max-width: 767px) {
+                display: none;
+            }
+        }
+    
+    }
+    .header-admin{
+        .dp{
+            height: 35px;
+            width: 35px;
+            border-radius: 100%;
+            img{
+                height: 35px;
+                width: 35px;
+                border-radius: 100%;
+                border: 2px solid $gray-light;
+            }
+        }
+    }
+}

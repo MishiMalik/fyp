@@ -10,7 +10,7 @@
    }
    .total-atendence-cel1{
        display: flex;
-       justify-content: flex-start;
+       justify-content: center;
        align-items: center;
        .total-atendence{
         font-size: 18px;
@@ -52,4 +52,19 @@
          font-weight: 500;
      }
     }
+}
+.present{
+    color: $green;
+}
+.absent{
+    color: $red;
+}
+.submit-result{
+    background-color: $primary-light;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 7px;
 }
