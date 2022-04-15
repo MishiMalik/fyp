@@ -117,7 +117,8 @@
             align-items: center;
             padding: 10px !important;
             border: 2px solid $gray-dark2;
-            min-height: 180px;
+            min-height: 190px;
+            // margin-bottom: 20px !important;
           
             
             &:hover{
@@ -129,6 +130,10 @@
             &-heading{
                 font-size: 16px;
                 font-weight: 600;
+                // white-space: nowrap;
+                // width: 90%;
+                // text-overflow: ellipsis;
+                // overflow: hidden;
                 color: black !important;
                 @media screen and (min-width:1600px) {
                     font-size: 20px;
@@ -231,6 +236,7 @@
         border-radius: 10px;
         cursor: pointer;
         border:2px solid $red-light;
+        min-height: 100px;
         &:hover{
             border:2px solid $red;
         }
@@ -240,7 +246,10 @@
         }
         .description {
             font-size: 14px;
-            
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+             
             @media screen and (max-width:375px) {
                 font-size:13px !important;
                 width: 100%;
@@ -297,6 +306,7 @@
         border-radius: 10px;
         cursor: pointer;
         border: 2px solid $yellow-light;
+        min-height: 100px;
         &:hover{
             border:2px solid $yellow;
         }
@@ -306,6 +316,10 @@
         }
         .description {
             font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+             
             @media screen and (max-width:375px) {
                 font-size:13px !important;
                 width: 100%;

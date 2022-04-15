@@ -141,7 +141,7 @@
               </svg>
               Dashboard</a></li>
 
-          <li class="left__list-item   active "><a class="dropdown-btn">
+          <li class="left__list-item    "><a class="dropdown-btn">
 
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                 <path
@@ -178,7 +178,7 @@
               </svg>Results</a>
           </li>
 
-          <li class="left__list-item"><a href="complaint.html">
+          <li class="left__list-item "><a href="complaint.html">
 
 
 
@@ -191,7 +191,7 @@
               Complaints</a>
           </li>
 
-          <li class="left__list-item"><a href="transport.html">
+          <li class="left__list-item active"><a href="transport.html">
 
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                 <path
@@ -245,9 +245,9 @@
 
         <!-- ===================main header============== -->
         <div class="main-section__header">
-          <div class="enrollments-header">
+          <!-- <div class="enrollments-header">
             <h2 class="secondary-heading mt-2">Dashboard</h2>
-          </div>
+          </div> -->
           <div class="search__input-admin ">
             <input type="text" placeholder="What you want to search?">
             <div class="search-icon">
@@ -494,89 +494,68 @@
         </div>
 
         <!-- ==================main-body================= -->
+       
         <div class="container mt-3 ">
-          <div class="row d-flex justify-content-center ">
-            <div class="col-lg-12 ">
-              <div class="profile__card">
-                <div class="personal__information">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 porder1">
-                          <h2 class="main-heading mb-0 pb-0">Mehwish Gul</h2>
-                          <p class="mb-0 clr-blue main-text">BSCSF18MM050</p>
-                          <span class="mt-4 d-flex main-text">Semester:<b class="clr-blue">&nbsp;7/8</b></span>
-                          <div class="mt-4 tertiary-heading clr-blue">About</div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 porder2">
-                           <div class="personal__picture">
-                               <img src="../images/dp.jpg" alt="no-img" class="img-fluid">
-                           </div>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                      <hr class="dashboard__assignment-line mb-3">
-                      <div class="col-lg-6 col-md-6">
-                          <label for="" class="main-text">Email</label>
-                      </div>
-                      <div class="col-lg-6 col-md-6">
-                          <label for="" class="main-text clr-blue">info@gmail.com</label>
-                      </div>
+            <div class="row d-flex justify-content-center ">
+              <div class="col-lg-12 ">
+                <div class="profile__card">
+                  <div class="enrollments-header align-items-center challan-row d-flex mb-4">
+                      <h2 class="secondary-heading mt-2 ">Transport</h2>
+                      <button class="apply-bus "><a href="add-driver.html">+ Driver</a></button>
                   </div>
-                    <div class="row mt-2">
-                        <div class="col-lg-6 col-md-6">
-                            <label for="" class="main-text">Class</label>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <label for="" class="main-text clr-blue">Computer Science</label>
-                        </div>
-                    </div>
-                    
-                    <div class="row mt-2">
-                        <div class="col-lg-6 col-md-6">
-                            <label for="" class="main-text">Session</label>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <label for="" class="main-text clr-blue">2018-2022</label>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-lg-6 col-md-6">
-                            <label for="" class="main-text">Registration Number</label>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <label for="" class="main-text clr-blue">FID075935</label>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-lg-6 col-md-6">
-                            <label for="" class="main-text">Father Name</label>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <label for="" class="main-text clr-blue">Mushtaq Ahmad</label>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-lg-6 col-md-6">
-                            <label for="" class="main-text">CNIC</label>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <label for="" class="main-text clr-blue">38301_____</label>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-lg-6 col-md-6">
-                            <label for="" class="main-text">Address</label>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <label for="" class="main-text clr-blue">Mianwali,Pakistan</label>
-                        </div>
-                    </div>
+                  <div class="admin-table ">
+                      <table id="admin" class="table table-striped table-bordered " style="width:100%">
+                        <thead>
+                            <tr class="thead">
+                                <th class="">S.No</th>
+                                <th class="">Driver Name</th>
+                                <th class="">Bus Number</th>
+                                <th class="">Destination</th>
+                                <th class="">&nbsp;&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="td">1</td>
+                            <td class="td">Muhammad Khan</td>
+                            <td class="td">BSDH973</td> 
+                             <td class="td">Mianwali</td>
+                             <td class="td ">
+                                 <div class="d-flex justify-content-center">
+                                    <a href="driver-profile.html" class="mr-2"> <i class="fa fa-eye" aria-hidden="true"></i>  </a>
+                                   <a href="edit-driver.html"  class="mr-2"><i class="fas fa-edit"></i></a>
+                                   <a href=""  class="mr-2"><i class="fa fa-trash"></i></a>
+                                 </div>
+                             </td>
+                          </tr>
+                          <tr>
+                            <td class="td">2</td>
+                            <td class="td">Muhammad Khan</td>
+                            <td class="td">BSDH973</td> 
+                             <td class="td">Mianwali</td>
+                             <td class="td ">
+                                 <div class="d-flex justify-content-center">
+                                    <a href="driver-profile.html" class="mr-2"> <i class="fa fa-eye" aria-hidden="true"></i>  </a>
+                                   <a href="edit-driver.html"  class="mr-2"><i class="fas fa-edit"></i></a>
+                                   <a href=""  class="mr-2"><i class="fa fa-trash"></i></a>
+                                 </div>
+                             </td>
+                          </tr>
+  
+                      
+                          
+                         
+                           
+                         
+                           
+                        </tbody>
+                    </table>
+                     </div> 
                 </div>
               </div>
             </div>
+  
           </div>
-
-        </div>
-
       </div>
 
     </div>
@@ -589,6 +568,8 @@
   <div class="backdrop" id="backdrop" href="javascript:void(0)" onclick="closeNav()">
 
   </div>
+
+  
 
 
   <!-- ==bootstrap4== -->
@@ -604,7 +585,7 @@
   <script src="/js/students/app.js"></script>
   <script src="/js/admin/admin-app.js"></script>
 
-
+  
 </body>
 
 </html>

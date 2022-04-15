@@ -60,6 +60,19 @@
                     font-size: 14px;
                     }
             }
+            .div-text {
+                white-space: nowrap;
+                width: 90%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 18px;
+                font-weight: 500;
+                color: black;
+
+                @media only screen and(max-width:500px){
+                    font-size: 14px;
+                    }
+            }
             .seen{
               font-weight: 400 !important;
               font-size: 17px !important;

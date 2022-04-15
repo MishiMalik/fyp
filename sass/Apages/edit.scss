@@ -1,0 +1,39 @@
+.upload-img-btn{
+    background-color: $primary-light;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px  solid $primary-light;
+    color: white;
+    border-radius: 3px;
+
+    &:hover{
+        color: $primary-light;
+        background-color: white;
+    }
+}
+.edit-img{
+    height: 140px;
+    width: 140px;
+    border-radius: 100%;
+    padding: 7px;
+    border: 1px solid $primary-light;
+}
+.active-student{
+    color: $green;
+  }
+  .de-active-student{
+    color: $red;
+  }
+  .icon-remove{
+      position: absolute;
+      right: 20px;
+      i{
+          color: $red;
+          font-size: 20px;
+      }
+  }
+  .comment-li{
+      position: relative;
+      z-index: unset;
+  }

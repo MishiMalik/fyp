@@ -408,7 +408,7 @@ tr:hover {
     align-items: center;
     padding: 10px !important;
     border: 2px solid #dddd;
-    min-height: 180px; }
+    min-height: 190px; }
     .dashboard__assignment-card:hover {
       border: 2px solid #cccc;
       text-decoration: none;
@@ -497,7 +497,8 @@ tr:hover {
   padding: 12px;
   border-radius: 10px;
   cursor: pointer;
-  border: 2px solid #FF5768; }
+  border: 2px solid #FF5768;
+  min-height: 100px; }
   .dashboard .missing-card-1:hover {
     border: 2px solid #EF4126; }
   @media screen and (max-width: 375px) {
@@ -505,7 +506,10 @@ tr:hover {
       display: flex;
       flex-direction: column !important; } }
   .dashboard .missing-card-1 .description {
-    font-size: 14px; }
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
     @media screen and (max-width: 375px) {
       .dashboard .missing-card-1 .description {
         font-size: 13px !important;
@@ -554,7 +558,8 @@ tr:hover {
   padding: 12px;
   border-radius: 10px;
   cursor: pointer;
-  border: 2px solid #E7BD50; }
+  border: 2px solid #E7BD50;
+  min-height: 100px; }
   .dashboard .missing-card-2:hover {
     border: 2px solid #FEBA0F; }
   @media screen and (max-width: 375px) {
@@ -562,7 +567,10 @@ tr:hover {
       display: flex;
       flex-direction: column !important; } }
   .dashboard .missing-card-2 .description {
-    font-size: 14px; }
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
     @media screen and (max-width: 375px) {
       .dashboard .missing-card-2 .description {
         font-size: 13px !important;
@@ -1686,8 +1694,58 @@ tr:hover {
             font-size: 14px;
             font-weight: 500; }
 
+.admin-table {
+  padding-bottom: 20px; }
+  @media only screen and (max-width: 991px) {
+    .admin-table {
+      overflow: scroll; } }
+
+@media only screen and (max-width: 991px) {
+  .admin-table table {
+    width: 990px !important;
+    overflow-x: scroll !important; } }
+
+.table-caption-div p {
+  white-space: nowrap !important;
+  width: 380px !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important; }
+
+.upload-img-btn {
+  background-color: #0052CC;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid #0052CC;
+  color: white;
+  border-radius: 3px; }
+  .upload-img-btn:hover {
+    color: #0052CC;
+    background-color: white; }
+
+.edit-img {
+  height: 140px;
+  width: 140px;
+  border-radius: 100%;
+  padding: 7px;
+  border: 1px solid #0052CC; }
+
 .active-student {
   color: #71C11F; }
+
+.de-active-student {
+  color: #EF4126; }
+
+.icon-remove {
+  position: absolute;
+  right: 20px; }
+  .icon-remove i {
+    color: #EF4126;
+    font-size: 20px; }
+
+.comment-li {
+  position: relative;
+  z-index: unset; }
 
 .main-section__header {
   padding: 20px 25px;

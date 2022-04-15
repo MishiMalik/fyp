@@ -14,3 +14,10 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
+
+
+// upload image of student or teachers data
+var loadFile = function(event) {
+  var image = document.getElementById('output');
+  image.src = URL.createObjectURL(event.target.files[0]);
+};
