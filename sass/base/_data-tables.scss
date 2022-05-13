@@ -103,11 +103,17 @@ tr{
 }
 
 .table-data{
+    cursor:  pointer !important;
    @media only screen and(max-width:1150px){
     //    max-width: 900px !important;
     //    min-width: 600px !important;
        overflow-x: scroll;
    }
+}
+.table-data2{
+    
+       overflow-x: scroll;
+   
 }
 .table-data-attendence{
     overflow-y: scroll;
@@ -130,7 +136,7 @@ tr{
     }
     tr{
         &:hover{
-            cursor: pointer;
+            cursor: pointer !important;
             background-color: rgba(0, 123, 255, 0.287) !important;
         }
     }
@@ -154,4 +160,7 @@ tr{
       }
       
   }
+}
+.complaint-table tr{
+    cursor: pointer !important;
 }

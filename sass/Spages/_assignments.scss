@@ -79,6 +79,7 @@ font-weight: 500;
     font-size: 14px;
     font-weight: 500;
     padding: 5px 10px;
+    cursor: pointer;
 }
 .download-disbaled{
     background-color: $gray-light2;
@@ -88,6 +89,7 @@ font-weight: 500;
     font-size: 14px;
     font-weight: 500;
     padding: 5px 10px;
+    cursor:not-allowed;
 }
 .assignment-download-row{
     border-top: 2px solid $gray-light;

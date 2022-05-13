@@ -274,9 +274,14 @@ tr:hover {
 .grades {
   width: 10% !important; }
 
-@media only screen and (max-width: 1150px) {
-  .table-data {
-    overflow-x: scroll; } }
+.table-data {
+  cursor: pointer !important; }
+  @media only screen and (max-width: 1150px) {
+    .table-data {
+      overflow-x: scroll; } }
+
+.table-data2 {
+  overflow-x: scroll; }
 
 .table-data-attendence {
   overflow-y: scroll; }
@@ -294,7 +299,7 @@ tr:hover {
   display: block !important; }
 
 .admin-table tr:hover {
-  cursor: pointer;
+  cursor: pointer !important;
   background-color: rgba(0, 123, 255, 0.287) !important; }
 
 .admin-table .thead {
@@ -312,6 +317,9 @@ tr:hover {
         padding: 15px !important; } }
   .admin-table .thead:hover {
     background-color: #0052CC !important; }
+
+.complaint-table tr {
+  cursor: pointer !important; }
 
 .main-section {
   margin-left: 18%;
@@ -854,9 +862,9 @@ tr:hover {
 
 .table-data table {
   overflow: scroll; }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1100px) {
     .table-data table {
-      width: 730px !important;
+      width: 780px !important;
       overflow-x: scroll !important; } }
 
 .dropzone {
@@ -929,7 +937,8 @@ tr:hover {
   color: white;
   font-size: 14px;
   font-weight: 500;
-  padding: 5px 10px; }
+  padding: 5px 10px;
+  cursor: pointer; }
 
 .download-disbaled {
   background-color: #BCC1C7;
@@ -938,7 +947,8 @@ tr:hover {
   color: white;
   font-size: 14px;
   font-weight: 500;
-  padding: 5px 10px; }
+  padding: 5px 10px;
+  cursor: not-allowed; }
 
 .assignment-download-row {
   border-top: 2px solid #EFF4FA;
@@ -979,7 +989,7 @@ tr:hover {
 
 .total-atendence-cel2 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center; }
   .total-atendence-cel2 .total-atendence {
     font-size: 18px;
@@ -992,7 +1002,7 @@ tr:hover {
 
 .total-atendence-cel3 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center; }
   .total-atendence-cel3 .total-atendence {
     font-size: 18px;
@@ -1007,6 +1017,12 @@ tr:hover {
   color: #71C11F; }
 
 .absent {
+  color: #EF4126; }
+
+.green {
+  color: #71C11F; }
+
+.red {
   color: #EF4126; }
 
 .submit-result {
@@ -1428,6 +1444,17 @@ tr:hover {
           @media only screen and (max-width: 500px) {
             .notifications__list li a .notifications__list-text p {
               font-size: 14px; } }
+        .notifications__list li a .notifications__list-text .div-text {
+          white-space: nowrap;
+          width: 90%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 18px;
+          font-weight: 500;
+          color: black; }
+          @media only screen and (max-width: 500px) {
+            .notifications__list li a .notifications__list-text .div-text {
+              font-size: 14px; } }
         .notifications__list li a .notifications__list-text .seen {
           font-weight: 400 !important;
           font-size: 17px !important; }
@@ -1547,6 +1574,11 @@ tr:hover {
   height: 100%;
   background-position: center;
   object-fit: contain; }
+
+@media only screen and (max-width: 767px) {
+  .main-section__header .enrollments-header .secondary-heading {
+    margin-bottom: -25px !important;
+    margin-top: 30px !important; } }
 
 .admin-main-section {
   margin-left: 18%;

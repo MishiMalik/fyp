@@ -25,7 +25,7 @@
    }
    .total-atendence-cel2{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     .total-atendence{
      font-size: 18px;
@@ -40,7 +40,7 @@
 }
 .total-atendence-cel3{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     .total-atendence{
      font-size: 18px;
@@ -57,6 +57,12 @@
     color: $green;
 }
 .absent{
+    color: $red;
+}
+.green{
+    color: $green;
+}
+.red{
     color: $red;
 }
 .submit-result{

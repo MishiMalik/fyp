@@ -1,0 +1,11 @@
+.main-section__header{
+    .enrollments-header{
+      .secondary-heading{
+            
+            @media only screen and (max-width:767px){
+                margin-bottom: -25px !important;
+                margin-top: 30px !important;
+            }
+      }
+    }
+}

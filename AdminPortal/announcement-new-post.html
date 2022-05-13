@@ -17,7 +17,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href=" https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap4.min.css">
+    
+     <!-- cdk Editor -->
+  <script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/decoupled-document/ckeditor.js"></script>
 
 
   <!-- Favicon -->
@@ -133,7 +135,7 @@
 
 
         <ul class="left__list p-0 m-0 ">
-          <li class="left__list-item "><a href="index.html">
+          <li class="left__list-item  "><a href="index.html">
               <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                 <path
                   d="M16 2.59375L15.28125 3.28125L2.28125 16.28125L3.71875 17.71875L5 16.4375L5 28L14 28L14 18L18 18L18 28L27 28L27 16.4375L28.28125 17.71875L29.71875 16.28125L16.71875 3.28125 Z M 16 5.4375L25 14.4375L25 26L20 26L20 16L12 16L12 26L7 26L7 14.4375Z"
@@ -141,7 +143,7 @@
               </svg>
               Dashboard</a></li>
 
-          <li class="left__list-item   active "><a class="dropdown-btn">
+          <li class="left__list-item       "><a class="dropdown-btn">
 
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                 <path
@@ -180,8 +182,6 @@
 
           <li class="left__list-item"><a href="complaint.html">
 
-
-
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                 <path
                   d="M10 3C5.59375 3 2 6.59375 2 11C2 13.949219 3.613281 16.519531 6 17.90625L6 27L28 27L28 7L23 7L23 6L21 6L21 7L16.90625 7C15.519531 4.613281 12.949219 3 10 3 Z M 10 5C13.324219 5 16 7.675781 16 11C16 14.324219 13.324219 17 10 17C6.675781 17 4 14.324219 4 11C4 7.675781 6.675781 5 10 5 Z M 9 7L9 11.5625L7.28125 13.28125L8.71875 14.71875L10.71875 12.71875L11 12.40625L11 7 Z M 17.71875 9L21 9L21 10L23 10L23 9L26 9L26 11L18 11C18 10.304688 17.886719 9.644531 17.71875 9 Z M 17.71875 13L26 13L26 25L8 25L8 18.71875C8.644531 18.886719 9.304688 19 10 19C13.710938 19 16.820313 16.4375 17.71875 13 Z M 18 17L18 19L20 19L20 17 Z M 22 17L22 19L24 19L24 17 Z M 10 21L10 23L12 23L12 21 Z M 14 21L14 23L16 23L16 21 Z M 18 21L18 23L20 23L20 21 Z M 22 21L22 23L24 23L24 21Z"
@@ -199,7 +199,7 @@
                   fill="#0052CC" />
               </svg>Transport</a></li>
 
-          <li class="left__list-item"><a href="missing-items.html">
+          <li class="left__list-item "><a href="missing-items.html">
 
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                 <path fill="#0052CC"
@@ -208,7 +208,9 @@
 
               Missing Items
             </a></li>
-         
+
+ 
+
           <li class="left__list-item"><a href="fee.html">
               <?xml version="1.0" encoding="iso-8859-1"?>
               <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -221,6 +223,7 @@
               </svg>
               Fee
             </a></li>
+
         </ul>
 
 
@@ -231,9 +234,9 @@
 
         <!-- ===================main header============== -->
         <div class="main-section__header">
-          <!-- <div class="enrollments-header">
+          <div class="enrollments-header">
             <h2 class="secondary-heading mt-2">Dashboard</h2>
-          </div> -->
+          </div>
           <div class="search__input-admin ">
             <input type="text" placeholder="What you want to search?">
             <div class="search-icon">
@@ -251,7 +254,7 @@
 
             <div class="notification__icons-icon dropdown ">
 
-              <a href="notifications.html">
+              <a>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
                   <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
@@ -479,65 +482,44 @@
 
         </div>
 
+        
         <!-- ==================main-body================= -->
-        <div class="container mt-3 ">
-          <div class="row d-flex justify-content-center ">
-            <div class="col-lg-12 ">
-              <div class="profile__card">
-                <div class="enrollments-header align-items-center challan-row d-flex mb-4">
-                    <h2 class="secondary-heading mt-2 ">Admins</h2>
-                    <button class="apply-bus "><a href="add-admin.html">+ Admin</a></button>
-                </div>
-                <div class="admin-table ">
-                    <table id="admin" class="table table-striped table-bordered " style="width:100%">
-                      <thead>
-                          <tr class="thead">
-                              <th class="">S.No</th>
-                              <th class="">Name</th>
-                              <th class="">Email</th>
-                              <th class="">Level</th>
-                              <th class="">&nbsp;&nbsp;</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="td">1</td>
-                          <td class="td">Mehwish Gul</td>
-                          <td class="td">info@gmail.com</td> 
-                           <td class="td">1</td>
-                           <td class="td ">
-                               <div class="d-flex justify-content-center">
-                                 <a href="edit-admin.html"  class="mr-2"><i class="fas fa-edit"></i></a>
-                                 <a href=""  class="mr-2"><i class="fa fa-trash"></i></a>
-                               </div>
-                           </td>
-                        </tr>
+        <div class="container mt-3">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-11 profile__card enrollments">
+                    <div class="enrollments-header align-items-center d-flex">
+                        <h2 class="secondary-heading mt-2">Announcement</h2>
+                        <!-- <button class="apply-bus "><a href="/studentsPortal/transport-apply.html">+ New Complaint</a></button> -->
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 mt-3 complaint-detail">
+                            <div class="floating mt-3">
+                                <input id="input__username" class="floating__input transport-input" name="username" type="text" placeholder="Address" />
+                                <label for="input__username" class="floating__label text-left pl-0" data-content="Item Name">
+                                <span class="hidden--visually">
+                                  Item Name</span></label>
+                              </div>
+                            <div class="mb-4 mt-3 text-left">
+                                <label for="comment" class="apply-label detail-text">Description:</label>
+                                <div id="toolbar-container"></div>
+                                <div id="editor">
+                                    <p>Type Description...</p>
+                                </div>
+                                <!-- cdk Editor for form -->
+                            </div>
+                              <div class="d-flex justify-content-end">
+                                <button class="apply-bus "><a href="/studentsPortal/transport-apply.html">Post</a></button>
+                              </div>
+                        </div>
+                        
+                    </div>
 
-                        <tr>
-                            <td class="td">2</td>
-                            <td class="td">Mehwish Gul</td>
-                            <td class="td">info@gmail.com</td> 
-                             <td class="td">1</td>
-                             <td class="td d-flex justify-content-center ">
-                                 <div class="d-flex justify-content-center">
-                                   <a href="edit-student.html"  class="mr-2 d-flex align-self-center"><i class="fas fa-edit"></i></a>
-                                   <a href=""  class="mr-2 d-flex align-self-center"><i class="fa fa-trash "></i></a>
-                                 </div>
-                             </td>
-                          </tr>
-                        
-                        
-                       
-                         
-                       
-                         
-                      </tbody>
-                  </table>
-                   </div> 
-              </div>
+                   
+                   
+ 
+                 </div>
             </div>
-          </div>
-
+         
         </div>
 
       </div>
@@ -562,10 +544,9 @@
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="../bootstrap-4.6.1/js/bootstrap.min.js"></script>
-  <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
-  <script src="  https://cdn.datatables.net/1.11.4/js/dataTables.bootstrap4.min.js"></script>
   <script src="/js/students/app.js"></script>
   <script src="/js/admin/admin-app.js"></script>
+  <script src="/js/students/editor.js"></script>
 
 
 </body>
