@@ -3,7 +3,7 @@ body{
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    // border: 3px solid $primary-light;
+    // border: 3px solid  $primary-light;
     // border-radius: 4px;
     
 
@@ -27,6 +27,11 @@ body{
     &::-webkit-scrollbar-thumb:hover {
         background: $blue-light;
     }
+
+
+    //  // scroll bar
+    //  overflow-y: scroll;
+    //  scrollbar-color: $gray-light $blue-light !important;
 }
 .col-25-2{
     width: 18% !important;
@@ -67,7 +72,7 @@ body{
 
 // color classes
 .primary-light{
-    color: $primary-light;
+    color:  $primary-light;
 }
 
 
@@ -138,5 +143,5 @@ body{
     }
 }
 .clr-blue{
-    color: $primary-light !important;
+    color:  $primary-light !important;
 }

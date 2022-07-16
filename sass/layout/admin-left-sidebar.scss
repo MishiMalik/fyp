@@ -67,7 +67,7 @@
                     white-space: nowrap !important;
                     border-radius: 7px;
                   
-                    // border-bottom: 3px solid $primary-light;
+                    // border-bottom: 3px solid  $primary-light;
                     @media screen and (max-width: 991px) {
                         font-size: 14px;
                         padding: 8px 0px 5px 0px;
@@ -146,7 +146,7 @@
             width: fit-content;
             padding: 0px 0px;
             border-radius: 5px;
-            border: 3px solid $primary-light;
+            border: 3px solid  $primary-light;
             padding: 7px;
             @media screen and (max-width: 767px) {
                display: none !important;
@@ -223,11 +223,11 @@
             height: 7px;
             width: 7px;
             border-radius: 100%;
-            background-color: $primary-light;
+            background-color:  $primary-light;
             margin-right: 10px;
         }
         &:hover{
-            border-bottom: 2px solid $primary-light !important;
+            border-bottom: 2px solid  $primary-light !important;
             background-color: transparent !important;
             box-shadow: none !important;
             border-radius: 0px !important;

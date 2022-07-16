@@ -1,7 +1,7 @@
 .complaint-table {
     thead {
         tr {
-            border: 1px solid $primary-light;
+            border: 1px solid  $primary-light;
             
         }
     }
@@ -43,7 +43,7 @@
 
 .complaint-detail {
     h3 {
-        color: $primary-light;
+        color:  $primary-light;
         font-size: 20px;
         font-weight: 600;
     }
@@ -70,7 +70,7 @@
     }
 
     .complaint-time {
-        color: $primary-light;
+        color:  $primary-light;
         font-weight: 500;
     }
     .reply{

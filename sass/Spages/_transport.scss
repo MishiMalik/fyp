@@ -6,17 +6,17 @@
 .driver-detail{
 font-size: 18px;
 font-weight: 600;
-color: $primary-light;
+color:  $primary-light;
 }
 .apply-bus{
     font-size: 30px !important;
-    color: $primary-light;
+    color:  $primary-light;
     font-weight: 600;
     justify-content: center;
 }
 .apply-bus2{
     font-size: 25px !important;
-    color: $primary-light;
+    color:  $primary-light;
     font-weight: 500;
     justify-content: center;
 }
@@ -27,7 +27,7 @@ color: $primary-light;
             font-size: 16px;
             font-weight: 600;
             color: white;
-            background-color: $primary-light;
+            background-color:  $primary-light;
             padding: 10px 20px;
             border-radius: 4px !important;
             text-decoration: none;
@@ -42,7 +42,7 @@ color: $primary-light;
 .apply-label{
     font-size: 14px !important;
     font-weight: 600 !important;
-    color: $primary-light !important;
+    color:  $primary-light !important;
     margin-left: 5px;
 }
 .apply-textarea{
@@ -50,7 +50,7 @@ color: $primary-light;
     border-bottom: 2px solid $gray-light !important;
 }
 .apply-textarea:focus{
-    border-bottom: 2px solid $primary-light !important;
+    border-bottom: 2px solid  $primary-light !important;
     outline: none;
     box-shadow: none;
 }
@@ -86,7 +86,7 @@ color: $primary-light;
   }
   
   .floating__label::before {
-    color: $primary-light;
+    color:  $primary-light;
     content: attr(data-content);
     display: inline-block;
     font-size: 16px;
@@ -115,13 +115,13 @@ color: $primary-light;
     transform: scale3d(0, 1, 1);
     width: 100%;
     background-color: var(--color__accent);
-    color: $primary-light !important;
+    color:  $primary-light !important;
   }
   
   .floating__input:focus + .floating__label::after {
     transform: scale3d(1, 1, 1);
     opacity: 1;
-    color: $primary-light !important;
+    color:  $primary-light !important;
   }
   
   .floating__input:placeholder-shown + .floating__label::before {
@@ -134,7 +134,7 @@ color: $primary-light;
   }
   
   .floating__input:focus + .floating__label::before {
-    color: $primary-light;
+    color:  $primary-light;
   }
   
   
@@ -149,7 +149,7 @@ color: $primary-light;
   .transport-input:hover,
   .transport-input:focus{
     outline: none;
-    border-bottom: 2px solid $primary-light !important;
+    border-bottom: 2px solid  $primary-light !important;
   }
   
 //   fieldset {

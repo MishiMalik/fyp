@@ -24,7 +24,7 @@
     }
      
       & .sign__illustration{
-          background-color: $primary-light;
+          background-color:  $primary-light;
           min-height: 93vh;
           display: flex;
           flex-direction: column;
@@ -82,7 +82,7 @@
           .sign-heading{
             font-size: 40px;
             font-weight: 600;
-            color: $primary-light;
+            color:  $primary-light;
             margin-right: auto;
             @media only screen and(max-width:575px){
                font-size: 30px;
@@ -95,7 +95,7 @@
               input{
                   background-color: $gray-light;
                   border: none;
-                  border-bottom: 2px solid $primary-light;
+                  border-bottom: 2px solid  $primary-light;
                   border-radius: 2px;
                   font-size: 16px;
                   font-weight: 500;
@@ -111,17 +111,17 @@
              .sign__btn{
                 margin-top: 30px !important;
                  a{
-                     background-color: $primary-light;
+                     background-color:  $primary-light;
                      color: white;
                      padding: 13px 27px;
                      font-size:16px ;
                      font-weight: 500;
                      border-radius: 4px;
-                     border: 2px solid $primary-light;
+                     border: 2px solid  $primary-light;
                      text-decoration: none;
                      &:hover{
                          background-color: white;
-                         color: $primary-light;
+                         color:  $primary-light;
                          font-weight: 600;
                      }
                      @media only screen and(max-width:575px){
@@ -136,7 +136,7 @@
                 display: flex;
                 justify-content: flex-end;
                  a{
-                     color: $primary-light;
+                     color:  $primary-light;
                      font-size:20px ;
                      font-weight: 500;
                      margin-left: auto;
@@ -171,6 +171,6 @@
         top: 14px;
         left: 10px;
         font-size: 17px;
-        color: $primary-light;
+        color:  $primary-light;
     }
 }

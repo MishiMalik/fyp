@@ -1,3 +1,6 @@
+:root {
+  --blue:#0052CC; }
+
 .main-heading {
   font-size: 26px;
   font-weight: 500 !important; }
@@ -116,7 +119,7 @@ body {
       width: 100% !important; } }
 
 .primary-light {
-  color: #0052CC; }
+  color: var(--blue); }
 
 .order1 {
   order: 2 !important; }
@@ -165,7 +168,7 @@ body {
       order: 1; } }
 
 .clr-blue {
-  color: #0052CC !important; }
+  color: var(--blue) !important; }
 
 .btn-yellow {
   border: none;
@@ -231,7 +234,7 @@ tr:hover {
 .td {
   font-size: 16px !important;
   font-weight: 500 !important;
-  color: #0052CC; }
+  color: var(--blue); }
   @media only screen and (max-width: 1150px) {
     .td {
       font-size: 14px !important; } }
@@ -247,7 +250,7 @@ tr:hover {
     background-color: rgba(0, 123, 255, 0.466) !important; }
 
 .thead {
-  background-color: #0052CC !important;
+  background-color: var(--blue) !important;
   color: white !important; }
   .thead th {
     font-size: 16px !important;
@@ -260,7 +263,7 @@ tr:hover {
         font-size: 14px !important;
         padding: 15px !important; } }
   .thead:hover {
-    background-color: #0052CC !important; }
+    background-color: var(--blue) !important; }
 
 .tite-R {
   width: 40% !important; }
@@ -303,7 +306,7 @@ tr:hover {
   background-color: rgba(0, 123, 255, 0.287) !important; }
 
 .admin-table .thead {
-  background-color: #0052CC !important;
+  background-color: var(--blue) !important;
   color: white !important; }
   .admin-table .thead th {
     font-size: 16px !important;
@@ -316,7 +319,7 @@ tr:hover {
         font-size: 14px !important;
         padding: 15px !important; } }
   .admin-table .thead:hover {
-    background-color: #0052CC !important; }
+    background-color: var(--blue) !important; }
 
 .complaint-table tr {
   cursor: pointer !important; }
@@ -396,7 +399,7 @@ tr:hover {
     .dashboard__assignment-heading .view {
       font-size: 14px;
       font-weight: 500;
-      color: #0052CC; }
+      color: var(--blue); }
       @media screen and (min-width: 1600px) {
         .dashboard__assignment-heading .view {
           font-size: 18px; } }
@@ -665,7 +668,7 @@ tr:hover {
       .sign__section .container-fluid {
         padding: 15px 25px; } }
     .sign__section .container-fluid .sign__illustration {
-      background-color: #0052CC;
+      background-color: var(--blue);
       min-height: 93vh;
       display: flex;
       flex-direction: column;
@@ -711,7 +714,7 @@ tr:hover {
       .sign__section .container-fluid .sign__information .sign-heading {
         font-size: 40px;
         font-weight: 600;
-        color: #0052CC;
+        color: var(--blue);
         margin-right: auto; }
         @media only screen and (max-width: 575px) {
           .sign__section .container-fluid .sign__information .sign-heading {
@@ -721,7 +724,7 @@ tr:hover {
         .sign__section .container-fluid .sign__information .sign__form input {
           background-color: #EFF4FA;
           border: none;
-          border-bottom: 2px solid #0052CC;
+          border-bottom: 2px solid var(--blue);
           border-radius: 2px;
           font-size: 16px;
           font-weight: 500;
@@ -734,17 +737,17 @@ tr:hover {
         .sign__section .container-fluid .sign__information .sign__form .sign__btn {
           margin-top: 30px !important; }
           .sign__section .container-fluid .sign__information .sign__form .sign__btn a {
-            background-color: #0052CC;
+            background-color: var(--blue);
             color: white;
             padding: 13px 27px;
             font-size: 16px;
             font-weight: 500;
             border-radius: 4px;
-            border: 2px solid #0052CC;
+            border: 2px solid var(--blue);
             text-decoration: none; }
             .sign__section .container-fluid .sign__information .sign__form .sign__btn a:hover {
               background-color: white;
-              color: #0052CC;
+              color: var(--blue);
               font-weight: 600; }
             @media only screen and (max-width: 575px) {
               .sign__section .container-fluid .sign__information .sign__form .sign__btn a {
@@ -755,7 +758,7 @@ tr:hover {
           display: flex;
           justify-content: flex-end; }
           .sign__section .container-fluid .sign__information .sign__form .sign__text a {
-            color: #0052CC;
+            color: var(--blue);
             font-size: 20px;
             font-weight: 500;
             margin-left: auto;
@@ -782,7 +785,7 @@ tr:hover {
     top: 14px;
     left: 10px;
     font-size: 17px;
-    color: #0052CC; }
+    color: var(--blue); }
 
 .profile__card {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.13);
@@ -799,7 +802,7 @@ tr:hover {
     height: 150px;
     width: 150px;
     text-align: center;
-    border: 2px solid #0052CC;
+    border: 2px solid var(--blue);
     margin: 0px auto; }
     .profile__card .personal__picture img {
       height: 150px;
@@ -873,8 +876,8 @@ tr:hover {
   border: 2px solid #dddd !important; }
 
 .submit-btn {
-  background-color: #0052CC;
-  border: 1px solid #0052CC;
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
   border-radius: 4px;
   margin-top: 20px;
   padding: 10px 30px !important;
@@ -931,7 +934,7 @@ tr:hover {
         font-size: 16px; } }
 
 .download {
-  background-color: #0052CC;
+  background-color: var(--blue);
   border: none;
   border-radius: 7px;
   color: white;
@@ -960,7 +963,7 @@ tr:hover {
     font-weight: 500; }
   .assignment-download-row .d-btn .download-link {
     font-size: 16px;
-    color: #0052CC;
+    color: var(--blue);
     font-weight: 500;
     cursor: pointer; }
 
@@ -1006,11 +1009,11 @@ tr:hover {
   align-items: center; }
   .total-atendence-cel3 .total-atendence {
     font-size: 18px;
-    color: #0052CC;
+    color: var(--blue);
     font-weight: 500; }
     .total-atendence-cel3 .total-atendence-number {
       font-size: 18px;
-      color: #0052CC;
+      color: var(--blue);
       font-weight: 500; }
 
 .present {
@@ -1026,7 +1029,7 @@ tr:hover {
   color: #EF4126; }
 
 .submit-result {
-  background-color: #0052CC;
+  background-color: var(--blue);
   color: white;
   border: none;
   padding: 7px 15px;
@@ -1042,17 +1045,17 @@ tr:hover {
 .driver-detail {
   font-size: 18px;
   font-weight: 600;
-  color: #0052CC; }
+  color: var(--blue); }
 
 .apply-bus {
   font-size: 30px !important;
-  color: #0052CC;
+  color: var(--blue);
   font-weight: 600;
   justify-content: center; }
 
 .apply-bus2 {
   font-size: 25px !important;
-  color: #0052CC;
+  color: var(--blue);
   font-weight: 500;
   justify-content: center; }
 
@@ -1063,7 +1066,7 @@ tr:hover {
     font-size: 16px;
     font-weight: 600;
     color: white;
-    background-color: #0052CC;
+    background-color: var(--blue);
     padding: 10px 20px;
     border-radius: 4px !important;
     text-decoration: none;
@@ -1076,7 +1079,7 @@ tr:hover {
 .apply-label {
   font-size: 14px !important;
   font-weight: 600 !important;
-  color: #0052CC !important;
+  color: var(--blue) !important;
   margin-left: 5px; }
 
 .apply-textarea {
@@ -1084,7 +1087,7 @@ tr:hover {
   border-bottom: 2px solid #EFF4FA !important; }
 
 .apply-textarea:focus {
-  border-bottom: 2px solid #0052CC !important;
+  border-bottom: 2px solid var(--blue) !important;
   outline: none;
   box-shadow: none; }
 
@@ -1115,7 +1118,7 @@ tr:hover {
   pointer-events: none; }
 
 .floating__label::before {
-  color: #0052CC;
+  color: var(--blue);
   content: attr(data-content);
   display: inline-block;
   font-size: 16px;
@@ -1140,12 +1143,12 @@ tr:hover {
   transform: scale3d(0, 1, 1);
   width: 100%;
   background-color: var(--color__accent);
-  color: #0052CC !important; }
+  color: var(--blue) !important; }
 
 .floating__input:focus + .floating__label::after {
   transform: scale3d(1, 1, 1);
   opacity: 1;
-  color: #0052CC !important; }
+  color: var(--blue) !important; }
 
 .floating__input:placeholder-shown + .floating__label::before {
   transform: translate3d(0, -2.2rem, 0) scale3d(1, 1, 1); }
@@ -1155,7 +1158,7 @@ tr:hover {
   transform: translate3d(0, -3.12rem, 0) scale3d(0.82, 0.82, 1); }
 
 .floating__input:focus + .floating__label::before {
-  color: #0052CC; }
+  color: var(--blue); }
 
 .transport-input {
   background-color: white;
@@ -1168,7 +1171,7 @@ tr:hover {
 .transport-input:hover,
 .transport-input:focus {
   outline: none;
-  border-bottom: 2px solid #0052CC !important; }
+  border-bottom: 2px solid var(--blue) !important; }
 
 .hidden--visually {
   border: 0;
@@ -1289,7 +1292,8 @@ tr:hover {
   .challan-row .child-padding {
     font-size: 13px; }
   .challan-row .university-name {
-    font-size: 15px; }
+    font-size: 15px;
+    margin-top: 16px; }
   .challan-row .fall-year {
     font-family: sans-serif; }
   .challan-row .program-name {
@@ -1310,8 +1314,8 @@ tr:hover {
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  border: 2px solid #0052CC;
-  color: #0052CC;
+  border: 2px solid var(--blue);
+  color: var(--blue);
   font-weight: 500;
   font-size: 18px;
   margin: 0px 10px;
@@ -1330,8 +1334,15 @@ tr:hover {
   .challan-row {
     flex-direction: column; } }
 
+.track {
+  overflow-x: scroll;
+  padding: 15px; }
+
+.generate-challan {
+  width: 1366px; }
+
 .complaint-table thead tr {
-  border: 1px solid #0052CC; }
+  border: 1px solid var(--blue); }
 
 .complaint-table tr {
   border: 1px solid #BCC1C7; }
@@ -1361,7 +1372,7 @@ tr:hover {
     display: inline-block; }
 
 .complaint-detail h3 {
-  color: #0052CC;
+  color: var(--blue);
   font-size: 20px;
   font-weight: 600; }
 
@@ -1382,7 +1393,7 @@ tr:hover {
     text-overflow: ellipsis;
     font-size: 18px; }
   .complaint-reply .complaint-time {
-    color: #0052CC;
+    color: var(--blue);
     font-weight: 500; }
   .complaint-reply .reply {
     color: #71C11F;
@@ -1464,7 +1475,7 @@ tr:hover {
         .notifications__list li a .notifications__list-text .name-time1 {
           display: flex; }
           .notifications__list li a .notifications__list-text .name-time1 span {
-            color: #0052CC;
+            color: var(--blue);
             font-size: 16px;
             font-weight: 600; }
             @media only screen and (max-width: 500px) {
@@ -1559,7 +1570,7 @@ tr:hover {
         .comments__list li a .comments__list-text .name-time1 {
           display: flex; }
           .comments__list li a .comments__list-text .name-time1 span {
-            color: #0052CC;
+            color: var(--blue);
             font-size: 16px;
             font-weight: 600; }
         .comments__list li a .comments__list-text .name-time {
@@ -1713,7 +1724,7 @@ tr:hover {
         .admin__list li a .notifications__list-text .name-time1 {
           display: flex; }
           .admin__list li a .notifications__list-text .name-time1 span {
-            color: #0052CC;
+            color: var(--blue);
             font-size: 14px;
             font-weight: 600; }
             @media only screen and (max-width: 500px) {
@@ -1744,15 +1755,15 @@ tr:hover {
   overflow: hidden !important; }
 
 .upload-img-btn {
-  background-color: #0052CC;
+  background-color: var(--blue);
   padding: 5px;
   font-size: 16px;
   font-weight: 500;
-  border: 2px solid #0052CC;
+  border: 2px solid var(--blue);
   color: white;
   border-radius: 3px; }
   .upload-img-btn:hover {
-    color: #0052CC;
+    color: var(--blue);
     background-color: white; }
 
 .edit-img {
@@ -1760,7 +1771,7 @@ tr:hover {
   width: 140px;
   border-radius: 100%;
   padding: 7px;
-  border: 1px solid #0052CC; }
+  border: 1px solid var(--blue); }
 
 .active-student {
   color: #71C11F; }
@@ -1845,7 +1856,10 @@ tr:hover {
       z-index: 2;
       height: 20px !important;
       width: 20px !important;
-      transition: all 1s; }
+      transition: all 1s;
+      background-color: transparent !important;
+      border: none !important;
+      padding: 0px !important; }
       @media screen and (max-width: 1260px) {
         .main-section__header .search__input .search-icon {
           right: 14px; } }
@@ -2060,7 +2074,7 @@ tr:hover {
           text-overflow: ellipsis;
           font-size: 14px;
           font-weight: 500;
-          color: #0052CC; }
+          color: var(--blue); }
         .notification__icons .notification__panel-body-text .seen {
           color: black;
           font-weight: 400 !important; }
@@ -2112,7 +2126,7 @@ tr:hover {
       .right-sidebar2 .profile__info .name h3 {
         font-size: 16px;
         font-weight: 600;
-        color: #0052CC; }
+        color: var(--blue); }
       .right-sidebar2 .profile__info .name span {
         font-size: 12px;
         font-weight: 500;
@@ -2132,7 +2146,7 @@ tr:hover {
         object-fit: contain; }
 
 .left-sidebar {
-  background-color: #0052CC !important;
+  background-color: var(--blue) !important;
   padding: 25px 0px 15px 0px !important;
   display: flex;
   align-items: center;
@@ -2144,6 +2158,8 @@ tr:hover {
   overflow-x: hidden;
   height: 100%;
   flex: 0 0 auto;
+  overflow-y: scroll;
+  scrollbar-color: #007bff var(--blue);
   /* width */
   /* Track */
   /* Handle */
@@ -2316,7 +2332,10 @@ tr:hover {
   .left-sidebar::-webkit-scrollbar {
     width: 10px; }
   .left-sidebar::-webkit-scrollbar-track {
-    background: #0052CC; }
+    background: var(--blue); }
+  .left-sidebar::-webkit-scrollbar-thumb {
+    background: #007bff;
+    border-radius: 5px; }
   .left-sidebar::-webkit-scrollbar-thumb {
     background: #007bff;
     border-radius: 5px; }
@@ -2386,7 +2405,10 @@ tr:hover {
       z-index: 2;
       height: 20px !important;
       width: 20px !important;
-      transition: all 1s; }
+      transition: all 1s;
+      background-color: transparent !important;
+      border: none !important;
+      padding: 0px; }
       @media screen and (max-width: 1260px) {
         .nav-bar .search__input2 .search-icon {
           right: 14px; } }
@@ -2491,7 +2513,7 @@ tr:hover {
       .right-sidebar .profile__info .name h3 {
         font-size: 18px;
         font-weight: 600;
-        color: #0052CC; }
+        color: var(--blue); }
         @media screen and (min-width: 1600px) {
           .right-sidebar .profile__info .name h3 {
             font-size: 20px; } }
@@ -2554,7 +2576,7 @@ tr:hover {
             font-size: 18px; } }
         .right-sidebar .notifications__list1-item--link:hover {
           background-color: #EFF4FA;
-          border-left: 4px solid #0052CC; }
+          border-left: 4px solid var(--blue); }
       .right-sidebar .notifications__list1-item .red::before {
         content: "";
         height: 8px;
@@ -2572,7 +2594,7 @@ tr:hover {
         height: 8px;
         width: 8px;
         border-radius: 100%;
-        background-color: #0052CC;
+        background-color: var(--blue);
         display: inline-block;
         margin: 10px !important; }
         @media screen and (min-width: 1600px) {
@@ -2606,7 +2628,7 @@ tr:hover {
 
 .footer {
   margin-left: 18.1%;
-  background-color: #0052CC;
+  background-color: var(--blue);
   padding: 20px 0px;
   width: 100%; }
   .footer ul {
@@ -2736,7 +2758,7 @@ tr:hover {
     width: fit-content;
     padding: 0px 0px;
     border-radius: 5px;
-    border: 3px solid #0052CC;
+    border: 3px solid var(--blue);
     padding: 7px; }
     @media screen and (max-width: 767px) {
       .admin-left-sidebar .logo-label {
@@ -2798,10 +2820,10 @@ tr:hover {
       height: 7px;
       width: 7px;
       border-radius: 100%;
-      background-color: #0052CC;
+      background-color: var(--blue);
       margin-right: 10px; }
     .dropdown-container a:hover {
-      border-bottom: 2px solid #0052CC !important;
+      border-bottom: 2px solid var(--blue) !important;
       background-color: transparent !important;
       box-shadow: none !important;
       border-radius: 0px !important; }

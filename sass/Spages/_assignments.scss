@@ -4,8 +4,8 @@ background-color: $gray-light3!important;
 border: 2px solid $gray-dark2 !important;
 }
 .submit-btn{
-    background-color: $primary-light;
-    border: 1px solid $primary-light;
+    background-color:  $primary-light;
+    border: 1px solid  $primary-light;
     border-radius: 4px;
     margin-top: 20px;
     padding: 10px 30px !important;
@@ -72,7 +72,7 @@ font-weight: 500;
     }
 }
 .download{
-    background-color: $primary-light;
+    background-color:  $primary-light;
     border: none;
     border-radius: 7px;
     color: white;
@@ -104,7 +104,7 @@ font-weight: 500;
     .d-btn{
         .download-link{
             font-size: 16px ;
-            color: $primary-light;
+            color:  $primary-light;
             font-weight: 500;
             cursor: pointer;
         }

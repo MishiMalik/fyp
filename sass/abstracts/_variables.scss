@@ -1,5 +1,8 @@
+:root{
+    --blue:#0052CC;
+}
 $primary:#023682;
-$primary-light:#0052CC;
+ $primary-light:var(--blue);
 $white:#FFFFFF;
 $white-light:#FFFFFF;
 $yellow:#FEBA0F;

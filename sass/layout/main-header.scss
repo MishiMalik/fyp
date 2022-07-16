@@ -84,6 +84,9 @@
             height: 20px !important;
             width: 20px !important;
             transition: all 1s;
+            background-color: transparent !important;
+            border: none !important;
+            padding: 0px !important;
 
             @media screen and (max-width: 1260px) {
                 right: 14px;
@@ -376,7 +379,7 @@
                     text-overflow: ellipsis;
                     font-size: 14px;
                     font-weight: 500;
-                    color: $primary-light;
+                    color:  $primary-light;
 
                 }
                 .seen{
@@ -449,7 +452,7 @@
             h3 {
                 font-size: 16px;
                 font-weight: 600;
-                color: $primary-light;
+                color:  $primary-light;
             }
 
             span {

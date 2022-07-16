@@ -1,5 +1,5 @@
 .left-sidebar{
-    background-color: $primary-light !important;
+    background-color:  $primary-light !important;
     padding: 25px 0px 15px 0px !important;
     display: flex;
     align-items: center;
@@ -11,6 +11,12 @@
     overflow-x: hidden;
     height: 100%;
     flex: 0 0 auto;
+
+    // scroll bar
+    overflow-y: scroll;
+    scrollbar-color: $blue-light $primary-light ;
+   
+
 
     @media screen and (max-width: 767px) {
         position: fixed;
@@ -113,7 +119,7 @@
                 padding: 10px 0px 7px 0px;
                 padding-right: 15px;
                 white-space: nowrap !important;
-                // border-bottom: 3px solid $primary-light;
+                // border-bottom: 3px solid  $primary-light;
                 @media screen and (max-width: 991px) {
                     font-size: 14px;
                     padding: 8px 0px 5px 0px;
@@ -234,7 +240,7 @@
 
     /* Track */
     &::-webkit-scrollbar-track {
-        background: $primary-light;
+        background:  $primary-light;
     }
 
     /* Handle */
@@ -242,7 +248,10 @@
         background: $blue-light;
         border-radius: 5px;
     }
-
+    &::-webkit-scrollbar-thumb {
+        background: $blue-light;
+        border-radius: 5px;
+    }
     /* Handle on hover */
     &::-webkit-scrollbar-thumb:hover {
         background: $blue-light;
@@ -332,6 +341,9 @@
              height: 20px !important;
              width: 20px !important;
              transition: all 1s;
+             background-color: transparent !important;
+             border: none !important;
+             padding: 0px;
              @media screen and (max-width: 1260px) {
                  right: 14px;
               }

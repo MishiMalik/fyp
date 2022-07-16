@@ -26,7 +26,7 @@
             h3 {
                 font-size: 18px;
                 font-weight: 600;
-                color: $primary-light;
+                color:  $primary-light;
                 @media screen and (min-width:1600px) {
                     font-size: 20px;
                   }
@@ -113,7 +113,7 @@
 
               &:hover{
                   background-color: $gray-light;
-                  border-left: 4px solid $primary-light;
+                  border-left: 4px solid  $primary-light;
               }
 
           }
@@ -140,7 +140,7 @@
                 height: 8px;
                 width: 8px;
                 border-radius: 100%;
-                background-color: $primary-light;
+                background-color:  $primary-light;
                 display: inline-block;
                 margin: 10px !important;
                 @media screen and (min-width:1600px) {

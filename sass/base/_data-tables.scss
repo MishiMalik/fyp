@@ -50,7 +50,7 @@ tr{
 .td{
     font-size: 16px !important;
     font-weight: 500 !important;
-    color: $primary-light;
+    color:  $primary-light;
     @media only screen and(max-width:1150px){
        font-size: 14px !important;
     }
@@ -68,7 +68,7 @@ tr{
     }
 }
 .thead{
-      background-color: $primary-light !important;
+      background-color:  $primary-light !important;
       color: white !important;
       th{
           font-size: 16px !important;
@@ -83,7 +83,7 @@ tr{
          
       }
       &:hover{
-        background-color: $primary-light !important;
+        background-color:  $primary-light !important;
     }
     
 }
@@ -141,7 +141,7 @@ tr{
         }
     }
     .thead{
-        background-color: $primary-light !important;
+        background-color:  $primary-light !important;
         color: white !important;
         th{
             font-size: 16px !important;
@@ -156,7 +156,7 @@ tr{
            
         }
         &:hover{
-          background-color: $primary-light !important;
+          background-color:  $primary-light !important;
       }
       
   }
